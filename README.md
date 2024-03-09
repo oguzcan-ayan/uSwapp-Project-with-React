@@ -1,8 +1,8 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# uSwapp
 
-Currently, two official plugins are available:
+İnsanların kullanmadıkları ürünlerini istedikleri ürünlerle takas yapabileceği bir platformdur. Bu platformun asıl amacı kullanılmayan ürünlerin çöpe gitmesini önlemek ve çevre kirliliği ile israfın önüne geçip kullanılmayan ürünlerin yeniden topluma kazandırılması amacını taşır. React teknolojisi kullanılarak tasarlanmıştır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is a platform where people can exchange their unused products for the products they want. The main purpose of this platform is to prevent unused products from going to waste and to prevent environmental pollution and waste and to reintroduce unused products to the society. It is designed by using react technology.
+
+## Kullanılan Teknolojiler-Used Technologies
