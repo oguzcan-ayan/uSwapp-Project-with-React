@@ -1,13 +1,12 @@
 import React from 'react';
 
-function Footer() {
+function Router() {
   return (
     <>
-    
     
     
     </>
   )
 }
 
-export default Footer;
+export default Router;

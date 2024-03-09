@@ -1,8 +1,9 @@
 import React from 'react';
 
-function Footer() {
+function Context() {
   return (
     <>
+    
     
     
     
@@ -10,4 +11,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default Context;

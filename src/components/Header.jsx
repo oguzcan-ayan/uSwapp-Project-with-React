@@ -10,7 +10,7 @@ function Header() {
                 console.log(innerWidth);
             }
 
-            window.addEventListener('resize', handleResize);
+            
         }
 
     })
