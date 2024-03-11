@@ -1,3 +1,90 @@
 @import "./variables.scss";
 @import "./main.scss";
 
+header {
+    width: 100%;
+    height: max-content;
+    position: fixed;
+
+    .uswapp-header{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid #dedede;
+        box-shadow: 0.5px 0.5px 5px 1px $color2;
+        padding: 15px;
+
+        .uswapp-logo{
+            background: url();
+        }
+        .searchbox{
+            width: 25%;
+            height: auto;
+            position: relative;
+
+            input{
+                width: 100%;
+                height: 2rem;
+                border: 1px solid #aaa;
+                border-radius: 3px;
+                font-size: 14px;
+                padding-left: 2.5rem;
+                transition: all 350ms;
+                cursor: pointer;
+            }
+
+            span{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 5px;
+                    margin-left: 7px;
+                    position: absolute;
+                    cursor: pointer;
+                }
+                :hover{
+                    border: none;
+                }
+            }
+
+            :hover{
+                border: 1px solid $color2;
+            }
+        }
+
+        .searchbox-info{
+                
+        }
+
+        .lang-content {
+
+        }
+
+        .theme-content{
+            
+        }
+
+        .user-contents{
+
+            .notifications{
+
+            }
+
+            .settings{
+
+            }
+
+            .user-log{
+
+                .account{
+
+                }
+
+                .log-out{
+                    
+                }
+            }
+        }
+    }
+}
