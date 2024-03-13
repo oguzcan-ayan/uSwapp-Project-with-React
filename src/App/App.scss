@@ -6,36 +6,47 @@ header {
     height: max-content;
     position: fixed;
 
-    .uswapp-header{
+    .uswapp-header {
         height: inherit;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         border-bottom: 1px solid #dedede;
-        box-shadow: 0.5px 0.5px 5px 1px $color2;
+        box-shadow: 0.5px 0.5px 5px 1px $color1;
         padding: 15px;
 
-        .uswapp-logo{
-            background: url();
+        .uswapp-logo {
+            cursor: pointer;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
         }
-        .searchbox{
+
+        .searchbox {
             width: 25%;
             height: auto;
             position: relative;
+            transition: width 1s ease;
 
-            input{
+            input {
                 width: 100%;
                 height: 2rem;
                 border: 1px solid #aaa;
                 border-radius: 3px;
                 font-size: 14px;
                 padding-left: 2.5rem;
-                transition: all 350ms;
                 cursor: pointer;
+
+                &:focus-visible {
+                    border: 2px solid $color1;
+                    outline: none;
+                }
             }
 
-            span{
-                svg{
+            span {
+                svg {
                     width: 20px;
                     height: 20px;
                     margin-top: 5px;
@@ -43,48 +54,90 @@ header {
                     position: absolute;
                     cursor: pointer;
                 }
-                :hover{
+
+                :hover {
                     border: none;
                 }
             }
 
-            :hover{
-                border: 1px solid $color2;
+            :hover {
+                border: 1px solid $color1;
             }
         }
 
-        .searchbox-info{
-                
+        .searchbox.active {
+            width: 30%;
         }
+
+        .searchbox-info {}
 
         .lang-content {
+            height: 100px;
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                margin-top: 35px;
+
+                svg {
+                    width: 2rem;
+                    height: 28px;
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                background-color: #111;
+                border-radius: 3px;
+                animation: lang 500ms ease;
+
+                button {
+                    color: $base-color1;
+                    border-radius: 3px;
+                    border: 0;
+                    cursor: pointer;
+
+                    &:first-child {
+                        background-color: blue;
+                        margin-bottom: 5px;
+                    }
+
+                    &:last-child {
+                        background-color: red;
+
+                    }
+                }
+            }
+
+            @keyframes lang {
+                from{
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
         }
 
-        .theme-content{
-            
-        }
+        .theme-content {}
 
-        .user-contents{
+        .user-contents {
+            display: flex;
 
-            .notifications{
+            .notifications {}
 
+            .settings {}
+
+            .user-log {
+
+                .account {}
             }
 
-            .settings{
-
-            }
-
-            .user-log{
-
-                .account{
-
-                }
-
-                .log-out{
-                    
-                }
-            }
+            .log-out {}
         }
     }
 }
