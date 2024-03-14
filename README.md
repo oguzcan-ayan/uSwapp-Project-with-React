@@ -23,7 +23,7 @@ It is a platform where people can exchange their unused products for the product
 
 [react-content-loader@7.0.0](https://skeletonreact.com/)
 
-[react-intl@6.6.2](https://www.npmjs.com/package/react-intl)
+[react-i18next@14.1.0]([https://www.npmjs.com/package/react-intl](https://react.i18next.com/))
 
 [react-lazy-load@4.0.1](https://www.npmjs.com/package/react-lazy-load)
 
