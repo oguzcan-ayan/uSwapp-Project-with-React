@@ -2,142 +2,339 @@
 @import "./main.scss";
 
 header {
-    width: 100%;
-    height: max-content;
-    position: fixed;
+  width: 100%;
+  height: max-content;
+  position: fixed;
 
-    .uswapp-header {
-        height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #dedede;
-        box-shadow: 0.5px 0.5px 5px 1px $color1;
-        padding: 15px;
+  .uswapp-header {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    box-shadow: 0.5px 0.5px 5px 1px $color1;
+    padding: 15px;
 
-        .uswapp-logo {
-            cursor: pointer;
+    .uswapp-logo {
+      cursor: pointer;
 
-            img {
-                width: 100px;
-                height: 100px;
-            }
-        }
-
-        .searchbox {
-            width: 25%;
-            height: auto;
-            position: relative;
-            transition: width 1s ease;
-
-            input {
-                width: 100%;
-                height: 2rem;
-                border: 1px solid #aaa;
-                border-radius: 3px;
-                font-size: 14px;
-                padding-left: 2.5rem;
-                cursor: pointer;
-
-                &:focus-visible {
-                    border: 2px solid $color1;
-                    outline: none;
-                }
-            }
-
-            span {
-                svg {
-                    width: 20px;
-                    height: 20px;
-                    margin-top: 5px;
-                    margin-left: 7px;
-                    position: absolute;
-                    cursor: pointer;
-                }
-
-                :hover {
-                    border: none;
-                }
-            }
-
-            :hover {
-                border: 1px solid $color1;
-            }
-        }
-
-        .searchbox.active {
-            width: 30%;
-        }
-
-        .searchbox-info {}
-
-        .lang-content {
-            height: 100px;
-
-            span {
-                cursor: pointer;
-                display: inline-block;
-                margin-top: 35px;
-
-                svg {
-                    width: 2rem;
-                    height: 28px;
-                }
-            }
-
-            div {
-                display: flex;
-                flex-direction: column;
-                background-color: #111;
-                border-radius: 3px;
-                animation: lang 500ms ease;
-
-                button {
-                    color: $base-color1;
-                    border-radius: 3px;
-                    border: 0;
-                    cursor: pointer;
-
-                    &:first-child {
-                        background-color: blue;
-                        margin-bottom: 5px;
-                    }
-
-                    &:last-child {
-                        background-color: red;
-
-                    }
-                }
-            }
-
-            @keyframes lang {
-                from{
-                    opacity: 0;
-                    transform: translateY(-10px);
-                }
-                to{
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-        }
-
-        .theme-content {}
-
-        .user-contents {
-            display: flex;
-
-            .notifications {}
-
-            .settings {}
-
-            .user-log {
-
-                .account {}
-            }
-
-            .log-out {}
-        }
+      img {
+        width: 100px;
+        height: 100px;
+      }
     }
+
+    .searchbox {
+      width: 25%;
+      height: auto;
+      position: relative;
+      transition: width 1s ease;
+
+      input {
+        width: 100%;
+        height: 2rem;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        font-size: 14px;
+        padding-left: 2.5rem;
+        cursor: pointer;
+
+        &:focus-visible {
+          border: 2px solid $color1;
+          outline: none;
+        }
+      }
+
+      span {
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-top: 5px;
+          margin-left: 7px;
+          position: absolute;
+          cursor: pointer;
+        }
+
+        :hover {
+          border: none;
+        }
+      }
+
+      :hover {
+        border: 1px solid $color1;
+      }
+    }
+
+    .searchbox.active {
+      width: 30%;
+    }
+
+    .searchbox-info {}
+
+    .lang-content {
+      height: 100px;
+      padding-top: 2rem;
+
+      .change-lang {
+        cursor: pointer;
+        display: inline-block;
+
+        svg {
+          width: 2rem;
+          height: 28px;
+        }
+      }
+
+      .viewed-flag {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      div {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        border-radius: 3px;
+        animation: lang 500ms ease;
+
+        span {
+          color: $base-color1;
+          border-radius: 3px;
+          border: 0;
+          cursor: pointer;
+
+          .selected-flag {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          .unselected-flag {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+
+      @keyframes lang {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+    }
+
+    .theme-content {
+
+      .change-theme {
+        display: inline-block;
+        height: fit-content;
+
+        .theme-label {
+          font-size: 17px;
+          position: relative;
+          display: inline-block;
+          width: 64px;
+          height: 34px;
+        }
+
+        .theme-label input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        .theme-slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #73C0FC;
+          transition: .4s;
+          border-radius: 30px;
+        }
+
+        .theme-slider:before {
+          position: absolute;
+          content: "";
+          height: 30px;
+          width: 30px;
+          border-radius: 20px;
+          left: 2px;
+          bottom: 2px;
+          z-index: 2;
+          background-color: #e8e8e8;
+          transition: .4s;
+        }
+
+        .sun svg {
+          position: absolute;
+          top: 6px;
+          left: 36px;
+          z-index: 1;
+          width: 24px;
+          height: 24px;
+          animation: rotate 15s linear infinite;
+        }
+
+        .moon svg {
+          fill: #73C0FC;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          z-index: 1;
+          width: 24px;
+          height: 24px;
+          animation: tilt 5s linear infinite;
+        }
+
+        @keyframes rotate {
+
+          0% {
+            transform: rotate(0);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes tilt {
+
+          0% {
+            transform: rotate(0deg);
+          }
+
+          25% {
+            transform: rotate(-10deg);
+          }
+
+          75% {
+            transform: rotate(10deg);
+          }
+
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+
+        .checked-input:checked+.theme-slider {
+          background-color: #183153;
+        }
+
+        .checked-input:focus+.theme-slider {
+          box-shadow: 0 0 1px #183153;
+        }
+
+        .checked-input:checked+.theme-slider:before {
+          transform: translateX(30px);
+        }
+      }
+    }
+
+    .user-contents {
+      display: flex;
+      flex-basis: 500px;
+      align-items: center;
+      justify-content: space-around;
+
+      .notifications {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+        cursor: pointer;
+
+        .notifications-icon {
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #183153;
+            border-radius: 50%;
+            color: $base-color1;
+          }
+        }
+
+        .notifications-text {
+          margin-top: 0.5rem;
+        }
+      }
+
+      .settings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+        cursor: pointer;
+
+        .settings-icon {
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #183153;
+            border-radius: 50%;
+            color: $base-color1;
+          }
+        }
+        
+        .settings-text{
+          margin-top: 0.5rem;
+        }
+      }
+
+      .user-log {
+
+        .account {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+          cursor: pointer;
+
+          .user-icon {
+            background-color: #183153;
+            border-radius: 50%;
+            color: $base-color1;
+            display: inline-block;
+            width: 2.5rem;
+            height: 2.5rem;
+
+            svg {
+              width: 2rem;
+              height: 2rem;
+              margin-top: 2px;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+
+      .log-out {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        .logout-icon {
+          margin-top: 0.5rem;
+
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+
+        .logout {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
 }
