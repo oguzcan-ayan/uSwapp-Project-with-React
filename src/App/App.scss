@@ -74,10 +74,13 @@ header {
     .lang-content {
       height: 100px;
       padding-top: 2rem;
+      flex-basis: 150px;
+      margin-right: 1rem;
 
       .change-lang {
         cursor: pointer;
         display: inline-block;
+        margin-right: 7px;
 
         svg {
           width: 2rem;
@@ -140,7 +143,7 @@ header {
           position: relative;
           display: inline-block;
           width: 64px;
-          height: 34px;
+          height: 30px;
         }
 
         .theme-label input {
@@ -164,8 +167,8 @@ header {
         .theme-slider:before {
           position: absolute;
           content: "";
-          height: 30px;
-          width: 30px;
+          height: 25px;
+          width: 25px;
           border-radius: 20px;
           left: 2px;
           bottom: 2px;
@@ -180,7 +183,7 @@ header {
           left: 36px;
           z-index: 1;
           width: 24px;
-          height: 24px;
+          height: 20px;
           animation: rotate 15s linear infinite;
         }
 
@@ -191,7 +194,7 @@ header {
           left: 5px;
           z-index: 1;
           width: 24px;
-          height: 24px;
+          height: 20px;
           animation: tilt 5s linear infinite;
         }
 
@@ -234,7 +237,7 @@ header {
         }
 
         .checked-input:checked+.theme-slider:before {
-          transform: translateX(30px);
+          transform: translateX(35px);
         }
       }
     }
@@ -283,8 +286,8 @@ header {
             color: $base-color1;
           }
         }
-        
-        .settings-text{
+
+        .settings-text {
           margin-top: 0.5rem;
         }
       }

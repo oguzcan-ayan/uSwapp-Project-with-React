@@ -1,3 +1,24 @@
-@media (max-width: 1200px){
-    
+@import '../../App/main.scss';
+@import '../../App/variables.scss';
+
+@media (max-width: 1200px) {
+    header {
+        .uswapp-header {
+            .searchbox.active {
+                width: 25%;
+            }
+
+            .lang-content {
+                flex-basis: 75px;
+                
+                .change-lang {
+
+                    svg {
+                        width: 22px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
 }

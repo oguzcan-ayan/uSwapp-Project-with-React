@@ -1,3 +1,49 @@
+@import '../../App/main.scss';
+@import '../../App/variables.scss';
+
 @media (max-width: 768px) {
-    
+
+    header {
+        .uswapp-header {
+            padding: 10px;
+            
+            .responsive-menu {
+                width: 85%;
+                height: 100%;
+                position: fixed;
+                z-index: 5;
+                top: 0;
+                right: -105%;
+                background-color: rgba(255, 255, 255, 0.6);
+                backdrop-filter: blur(14px);
+                border-radius: 5px;
+                overflow-x: hidden;
+                transition: all 350ms ease-in-out;
+                padding-top: 20px;
+
+                &-close {
+                    right: 0;
+                    transition: all, 1s ease-in-out;
+                }
+
+                .close-hamburger-btn {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    border-radius: 0;
+                    background: none;
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        color: #176192;
+                        margin-top: 2px;
+                      }
+                }
+            }
+        }
+    }
 }
