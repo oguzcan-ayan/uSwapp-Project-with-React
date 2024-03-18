@@ -196,7 +196,7 @@ function Header() {
 
                         <ProjectLogo />
 
-                        <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close before' : ''}`}>
+                        <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
 
                             <button
                                 className='close-hamburger-btn'
@@ -207,23 +207,19 @@ function Header() {
 
                             {renderLangs()}
                             {renderThemes()}
-
-                            <div className='notifications'>
-                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                <span className='notifications-text'>Notifications</span>
+                            
+                            <div className='user-log'>
+                                <div className='account'>
+                                    <span className='user-icon'><LuUser2 /></span>
+                                    <span className='username'>username</span>
+                                    <span className='user-mail'>user-mail@gmail.com</span>
+                                </div>
                             </div>
-                            <div className='settings'>
-                                <span className='settings-icon'><IoSettingsOutline /></span>
-                                <span className='settings-text'>Settings</span>
-                            </div>
-
-                            <span className='user-mail'>user-mail@gmail.com</span>
 
                             <div className='log-out'>
                                 <span className='logout-icon'><MdLogout /></span>
                                 <span className='logout'>Log-out</span>
                             </div>
-
                         </div>
 
                         {isHamburgerButtonOpen && (
@@ -238,17 +234,20 @@ function Header() {
                         </div>
 
                         <div className='user-contents'>
-                            <div className='user-log'>
-                                <div className='account'>
-                                    <span className='user-icon'><LuUser2 /></span>
-                                    <span className='username'>username</span>
-                                </div>
+                            <div className='notifications'>
+                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
+                                <span className='notifications-text'>Notifications</span>
                             </div>
-                            <button 
-                            className='more-btn' 
-                            onClick={() => {
-                                setIsHamburgerButtonOpen(true);
-                            }}
+                            <div className='settings'>
+                                <span className='settings-icon'><IoSettingsOutline /></span>
+                                <span className='settings-text'>Settings</span>
+                            </div>
+
+                            <button
+                                className='more-btn'
+                                onClick={() => {
+                                    setIsHamburgerButtonOpen(true);
+                                }}
                             >
                                 <GiHamburgerMenu />
                             </button>
