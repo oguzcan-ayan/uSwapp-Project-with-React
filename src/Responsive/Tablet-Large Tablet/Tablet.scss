@@ -176,4 +176,25 @@
             }
         }
     }
+
+    section {
+
+        .products-content {
+
+            >div {
+
+                >span {
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                >span+span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

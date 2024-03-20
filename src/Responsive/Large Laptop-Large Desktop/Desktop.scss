@@ -128,4 +128,26 @@
             }
         }
     }
+
+    section {
+
+        .products-content {
+
+            >div {
+
+                >span {
+
+                    svg {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+
+                >span+span {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
