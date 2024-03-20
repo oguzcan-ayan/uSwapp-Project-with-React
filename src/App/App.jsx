@@ -6,6 +6,7 @@ import '../Responsive/Tablet-Large Tablet/Tablet.scss';
 import '../Responsive/Large Mobile-Tablet/LMobile.scss';
 import '../Responsive/Mobile/Mobile.scss';
 import Header from '../components/Header';
+import ProductCategories from '../components/ProductCategories';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
           <Header /> 
+          <ProductCategories />
     </>
   )
 }

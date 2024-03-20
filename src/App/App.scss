@@ -4,7 +4,7 @@
 header {
   width: 100%;
   height: max-content;
-  position: fixed;
+  position: sticky;
 
   .uswapp-header {
     height: inherit;
@@ -335,6 +335,37 @@ header {
         .logout {
           margin-top: 0.5rem;
         }
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: max-content;
+
+  .products-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      cursor: pointer;
+
+      >span {
+        text-align: center;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      >span+span {
+        font-size: 20px;
       }
     }
   }
