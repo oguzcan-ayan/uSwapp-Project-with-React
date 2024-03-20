@@ -6,17 +6,17 @@
     header {
         .uswapp-header {
             padding: 10px;
+            justify-content: space-between;
 
             .uswapp-logo {
 
                 img {
-                    padding-top: 1rem;
-                    padding-right: 1rem;
+                    padding-top: 0.5rem;
                 }
             }
 
             .responsive-menu {
-                width: 75%;
+                width: 80%;
                 height: 100%;
                 position: fixed;
                 z-index: 5;
@@ -27,7 +27,7 @@
                 border-radius: 5px;
                 overflow-x: hidden;
                 transition: all 350ms ease-in-out;
-                padding-top: 20px;
+                padding-top: 100px;
 
                 &-close {
                     right: 0;
@@ -36,36 +36,183 @@
 
                 .close-hamburger-btn {
                     position: absolute;
-                    top: 10px;
-                    right: 10px;
+                    top: 15px;
+                    right: 25px;
                     width: 25px;
                     height: 25px;
                     cursor: pointer;
                     border-radius: 0;
                     background: none;
+                    border: none;
 
                     svg {
-                        height: 20px;
-                        width: 20px;
-                        color: #176192;
-                        margin-top: 2px;
+                        height: 2rem;
+                        width: 2rem;
+                        color: $color1;
+                        margin-top: 5px;
                     }
                 }
 
-                .lang-content {}
+                .user-contents {
+                    flex-direction: column;
+                    position: relative;
 
-                .theme-content {}
+                    .user-log {
+                        margin-top: 1rem;
 
-                .user-log {}
+                        .account {
+                            margin-top: 0;
+                            gap: 5px;
+                        }
 
-                .log-out {}
+                        .user-icon {
+                            width: 4rem;
+                            height: 4rem;
+
+                            svg {
+                                width: 3rem;
+                                height: 3rem;
+                                margin-left: 8px;
+                            }
+                        }
+
+                        .username {
+                            font-size: 1rem;
+                        }
+
+                        .user-mail {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .notifications {
+                        gap: 5px;
+                        margin-top: 3rem;
+
+                        .notifications-icon {
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
+
+                        .notifications-text {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .settings {
+                        margin-top: 3rem;
+                        gap: 5px;
+
+                        .settings-icon {
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
+
+                        .settings-text {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .lang-content {
+                        padding-top: 0;
+                        margin-top: 3rem;
+                        flex-basis: 100px;
+                        text-align: center;
+                        margin-right: 1rem;
+
+                        .change-lang {
+
+                            svg {
+                                width: 2rem;
+                                height: 1.5rem;
+                            }
+                        }
+
+                        .viewed-flag {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+
+                        div {
+
+                            .selected-flag {
+                                width: 2.5rem;
+                                height: 2.5rem;
+                            }
+
+                            .unselected-flag {
+                                width: 2.5rem;
+                                height: 2.5rem;
+                            }
+                        }
+                    }
+
+                    .theme-content {
+                        margin-top: 3rem;
+                        margin-bottom: 0;
+
+                        .change-theme {
+
+                            .theme-label {
+                                width: 64px;
+                                height: 30px;
+                            }
+
+                            .theme-slider:before {
+                                height: 25px;
+                                width: 25px;
+                            }
+
+                            .sun svg {
+                                width: 24px;
+                                height: 20px;
+                                left: 36px;
+                                top: 6px;
+                            }
+
+                            .moon svg {
+                                width: 24px;
+                                height: 20px;
+                                top: 5px;
+                                left: 5px;
+                            }
+
+                            .checked-input:checked+.theme-slider:before {
+                                transform: translateX(35px);
+                            }
+                        }
+                    }
+                }
+
+                .log-out {
+                    position: absolute;
+                    bottom: 20%;
+                    right: 2rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 5px;
+
+                    .logout-icon {
+                        margin-left: 1rem;
+
+                        svg {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
             }
 
             .searchbox {
-                
+                width: 50%;
+
                 input {
                     height: 25px;
-                    font-size: 12px;
+                    font-size: 11px;
                     padding-left: 20px;
                 }
 
@@ -77,44 +224,20 @@
                         margin-left: 3px;
                     }
                 }
-
             }
 
-            .user-contents {
-                flex-basis: 250px;
+            .searchbox.active {
+                width: 50%;
+            }
 
-                .notifications {
-                    margin-top: 10px;
+            .more-btn {
+                background: none;
+                color: #183153;
+                border: none;
 
-                    .notifications-icon {
-                        svg{
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-                }
-
-                .settings {
-                    margin-top: 10px;
-                    
-                    .settings-icon {
-                        svg{
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-                }
-
-                .more-btn {
-                    background: none;
-                    color: #183153;
-                    border: none;
-                    margin-bottom: 7px;
-
-                    svg{
-                        width: 18px;
-                        height: 18px;
-                    }
+                svg {
+                    width: 22px;
+                    height: 22px;
                 }
             }
         }

@@ -205,27 +205,35 @@ function Header() {
                                 <MdCancel />
                             </button>
 
-                            {renderLangs()}
-                            {renderThemes()}
-                            
-                            <div className='user-log'>
-                                <div className='account'>
-                                    <span className='user-icon'><LuUser2 /></span>
-                                    <span className='username'>username</span>
-                                    <span className='user-mail'>user-mail@gmail.com</span>
+                            <div className='user-contents'>
+                                <div className='user-log'>
+                                    <div className='account'>
+                                        <span className='user-icon'><LuUser2 /></span>
+                                        <span className='username'>username</span>
+                                        <span className='user-mail'>user-mail@gmail.com</span>
+                                    </div>
                                 </div>
+
+                                <div className='notifications'>
+                                    <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
+                                    <span className='notifications-text'>Notifications</span>
+                                </div>
+                                <div className='settings'>
+                                    <span className='settings-icon'><IoSettingsOutline /></span>
+                                    <span className='settings-text'>Settings</span>
+                                </div>
+
+                                {renderThemes()}
+                                {renderLangs()}
+
                             </div>
 
                             <div className='log-out'>
-                                <span className='logout-icon'><MdLogout /></span>
                                 <span className='logout'>Log-out</span>
+                                <span className='logout-icon'><MdLogout /></span>
                             </div>
+
                         </div>
-
-                        {isHamburgerButtonOpen && (
-                            <div className='responsive-menu-overlay'></div>
-                        )}
-
 
                         {renderSearchbox()}
 
@@ -233,25 +241,14 @@ function Header() {
 
                         </div>
 
-                        <div className='user-contents'>
-                            <div className='notifications'>
-                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                <span className='notifications-text'>Notifications</span>
-                            </div>
-                            <div className='settings'>
-                                <span className='settings-icon'><IoSettingsOutline /></span>
-                                <span className='settings-text'>Settings</span>
-                            </div>
-
-                            <button
-                                className='more-btn'
-                                onClick={() => {
-                                    setIsHamburgerButtonOpen(true);
-                                }}
-                            >
-                                <GiHamburgerMenu />
-                            </button>
-                        </div>
+                        <button
+                            className='more-btn'
+                            onClick={() => {
+                                setIsHamburgerButtonOpen(true);
+                            }}
+                        >
+                            <GiHamburgerMenu />
+                        </button>
                     </div>
                 </header>
             </>

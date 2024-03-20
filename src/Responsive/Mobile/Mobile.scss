@@ -2,5 +2,48 @@
 @import '../../App/variables.scss';
 
 @media (max-width: 576px) {
-    
+    header {
+        .uswapp-header {
+            .responsive-menu {
+                padding-top: 75px;
+
+                .user-contents {
+
+                    .lang-content {
+
+                        .change-lang {
+                            margin-right: 0;
+
+                            svg {
+                                height: 20px;
+                            }
+                        }
+
+                        .viewed-flag {
+                            width: 35px;
+                            height: 35px;
+                        }
+
+                        div {
+
+                            .selected-flag {
+                                width: 35px;
+                                height: 35px;
+                            }
+
+                            .unselected-flag {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+
+                .log-out {
+                    bottom: 1rem;
+                    right: 1rem;
+                }
+            }
+        }
+    }
 }
