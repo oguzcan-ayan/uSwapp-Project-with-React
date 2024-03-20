@@ -19,8 +19,6 @@ It is a platform where people can exchange their unused products for the product
 
 [react-toastify@10.0.4](https://www.npmjs.com/package/react-toastify)
 
-[react-slick@0.30.2](https://react-slick.neostack.com/)
-
 [react-content-loader@7.0.0](https://skeletonreact.com/)
 
 [react-i18next@14.1.0](https://react.i18next.com/)
