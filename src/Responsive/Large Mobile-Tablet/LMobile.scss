@@ -205,6 +205,8 @@
                         }
                     }
                 }
+
+                
             }
 
             .searchbox {
@@ -238,6 +240,63 @@
                 svg {
                     width: 22px;
                     height: 22px;
+                }
+            }
+        }
+    }
+
+    section {
+
+        .slider-container {
+            margin-top: 4%;
+            
+            .slick-slider {
+                
+                .slick-prev {
+                    left: 0.5rem;
+
+                    &::before {
+                        background-color: black;
+                        color: $color1;
+                        border-radius: 50%;
+                    }
+                }
+
+                .slick-next {
+                    right: 0.5rem;
+
+                    &::before {
+                        background-color: black;
+                        color: $color1;
+                        border-radius: 50%;
+                    }
+                }
+
+                .slick-list {
+                    .slick-track {
+                        >div {
+                            >div {
+                                >div {
+                                    display: flex !important;
+                                    flex-direction: column;
+                                    gap: 10px;
+
+                                    >span {
+                                        text-align: center;
+
+                                        svg {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+
+                                    >span+span {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

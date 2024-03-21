@@ -7,6 +7,7 @@ import '../Responsive/Large Mobile-Tablet/LMobile.scss';
 import '../Responsive/Mobile/Mobile.scss';
 import Header from '../components/Header';
 import ProductCategories from '../components/ProductCategories';
+import NewAddedProducts from '../components/NewAddedProducts';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <>
           <Header /> 
           <ProductCategories />
+          <NewAddedProducts />
     </>
   )
 }
