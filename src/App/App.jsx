@@ -8,22 +8,25 @@ import '../Responsive/Mobile/Mobile.scss';
 import Header from '../components/Header';
 import ProductCategories from '../components/ProductCategories';
 import NewAddedProducts from '../components/NewAddedProducts';
+import { MenuProvider } from '../Tools/Context/ResponsiveMenuContext';
 
 function App() {
 
- /*  const isLang = localStorage.getItem("lang");
-  const defaultLang = isLang ? isLang : navigator.language;
-  const [lang, setLang] = useState(defaultLang); */
+  /*  const isLang = localStorage.getItem("lang");
+   const defaultLang = isLang ? isLang : navigator.language;
+   const [lang, setLang] = useState(defaultLang); */
 
-/*   useEffect(() => {
-    localStorage.setItem("lang", lang);
-  }, [lang]) */
+  /*   useEffect(() => {
+      localStorage.setItem("lang", lang);
+    }, [lang]) */
 
   return (
     <>
-          <Header /> 
-          <ProductCategories />
-          <NewAddedProducts />
+      <MenuProvider>
+        <Header />
+        <ProductCategories />
+        <NewAddedProducts />
+      </MenuProvider>
     </>
   )
 }

@@ -23,7 +23,7 @@
                 top: 0;
                 right: -105%;
                 background-color: rgba(255, 255, 255, 0.6);
-                backdrop-filter: blur(14px);
+                backdrop-filter: blur(7px);
                 border-radius: 5px;
                 overflow-x: hidden;
                 transition: all 350ms ease-in-out;
@@ -205,8 +205,6 @@
                         }
                     }
                 }
-
-                
             }
 
             .searchbox {
@@ -246,31 +244,38 @@
     }
 
     section {
-
         .slider-container {
             margin-top: 4%;
-            
+            position: relative;
+
+            .slick-prev-btn {
+                position: absolute;
+                background: none;
+                border: none;
+                bottom: 14px;
+                left: 5px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .slick-next-btn {
+                position: absolute;
+                background: none;
+                border: none;
+                bottom: 1rem;
+                right: 0.5rem;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
             .slick-slider {
-                
-                .slick-prev {
-                    left: 0.5rem;
-
-                    &::before {
-                        background-color: black;
-                        color: $color1;
-                        border-radius: 50%;
-                    }
-                }
-
-                .slick-next {
-                    right: 0.5rem;
-
-                    &::before {
-                        background-color: black;
-                        color: $color1;
-                        border-radius: 50%;
-                    }
-                }
+                z-index: -2;
 
                 .slick-list {
                     .slick-track {

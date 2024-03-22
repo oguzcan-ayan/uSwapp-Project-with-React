@@ -8,6 +8,7 @@ import { MdLogout } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function Header() {
 
@@ -18,7 +19,7 @@ function Header() {
     const langboxRef = useRef(null);
     const [themes, setThemes] = useState('light');
     const [lastClickTime, setLastClickTime] = useState(0);
-    const [isHamburgerButtonOpen, setIsHamburgerButtonOpen] = useState(false);
+    const { isHamburgerButtonOpen, openResponsiveMenu, closeResponsiveMenu } = useMenu();
 
     const langs = [
         {
@@ -196,11 +197,24 @@ function Header() {
 
                         <ProjectLogo />
 
+                        {renderSearchbox()}
+
+                        <div className='searchbox-info'>
+
+                        </div>
+
+                        <button
+                            className='more-btn'
+                            onClick={() => { openResponsiveMenu() }}
+                        >
+                            <GiHamburgerMenu />
+                        </button>
+
                         <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
 
                             <button
                                 className='close-hamburger-btn'
-                                onClick={() => setIsHamburgerButtonOpen(false)}
+                                onClick={() => { closeResponsiveMenu() }}
                             >
                                 <MdCancel />
                             </button>
@@ -234,21 +248,6 @@ function Header() {
                             </div>
 
                         </div>
-
-                        {renderSearchbox()}
-
-                        <div className='searchbox-info'>
-
-                        </div>
-
-                        <button
-                            className='more-btn'
-                            onClick={() => {
-                                setIsHamburgerButtonOpen(true);
-                            }}
-                        >
-                            <GiHamburgerMenu />
-                        </button>
                     </div>
                 </header>
             </>

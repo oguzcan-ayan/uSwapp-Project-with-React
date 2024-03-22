@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SlUserFemale } from "react-icons/sl";
 import { FaRegUser } from "react-icons/fa";
 import { FaBabyCarriage } from "react-icons/fa";
@@ -9,13 +9,18 @@ import { IoGameController } from "react-icons/io5";
 import { TbEPassport } from "react-icons/tb";
 import { GiStreetLight } from "react-icons/gi";
 import { BiSolidCarMechanic } from "react-icons/bi";
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function ProductCategories() {
 
     const [isMobile, setIsMobile] = useState(false);
+    const { isHamburgerButtonOpen } = useMenu();
+    const slickRef = useRef(null);
 
     useEffect(() => {
 
@@ -44,17 +49,44 @@ function ProductCategories() {
     const settings = {
         speed: 500,
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 4,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 300,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+
     };
+
+    const nextButtonStyle = {
+        'zIndex': isHamburgerButtonOpen ? '-1' : '10'
+    }
 
     if (isMobile) {
         return (
             <section>
                 <div className='slider-container'>
-                    <Slider {...settings}>
+                    <button className='slick-prev-btn' onClick={() => slickRef.current?.slickPrev()}><FaArrowCircleLeft /></button>
+                    <Slider ref={slickRef} {...settings}>
                         <div>
                             <span><SlUserFemale /></span>
                             <span>Women</span>
@@ -92,6 +124,7 @@ function ProductCategories() {
                             <span>Auto Parts</span>
                         </div>
                     </Slider>
+                    <button className='slick-next-btn' onClick={() => slickRef.current?.slickNext()} style={nextButtonStyle}><FaArrowCircleRight /></button>
                 </div>
             </section>
         )
