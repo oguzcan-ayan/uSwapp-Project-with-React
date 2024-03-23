@@ -46,4 +46,47 @@
             }
         }
     }
+
+    section {
+        .slider-container {
+            margin-top: 6%;
+
+            .slick-prev-btn {
+                bottom: 1rem;
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            .slick-next-btn {
+                bottom: 1rem;
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            .slick-slider {
+
+                .slick-list {
+                    .slick-track {
+                        >div {
+                            >div {
+                                >div {
+                                    gap: 7px;
+
+                                    >span+span {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
