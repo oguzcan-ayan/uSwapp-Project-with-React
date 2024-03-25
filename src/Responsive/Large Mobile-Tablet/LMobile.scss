@@ -193,9 +193,9 @@
                     bottom: 20%;
                     right: 2rem;
                     display: flex;
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                     gap: 5px;
-
+                    
                     .logout-icon {
                         margin-left: 1rem;
 
@@ -254,6 +254,7 @@
                 border: none;
                 bottom: 14px;
                 left: 5px;
+                color: $color1;
 
                 svg {
                     width: 20px;
@@ -265,8 +266,9 @@
                 position: absolute;
                 background: none;
                 border: none;
-                bottom: 15px;
+                bottom: 14px;
                 right: 0.5rem;
+                color: $color1;
 
                 svg {
                     width: 20px;
@@ -288,7 +290,7 @@
 
                                     >span {
                                         text-align: center;
-
+                                      
                                         svg {
                                             width: 20px;
                                             height: 20px;
@@ -297,6 +299,7 @@
 
                                     >span+span {
                                         font-size: 14px;
+                                        color: #333333;
                                     }
                                 }
                             }
