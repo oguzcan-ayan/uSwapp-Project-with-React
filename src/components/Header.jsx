@@ -230,11 +230,11 @@ function Header() {
 
                                 <div className='notifications'>
                                     <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                    <span className='notifications-text'>Notifications</span>
+                                 
                                 </div>
                                 <div className='settings'>
                                     <span className='settings-icon'><IoSettingsOutline /></span>
-                                    <span className='settings-text'>Settings</span>
+                                   
                                 </div>
 
                                 {renderThemes()}
@@ -243,8 +243,8 @@ function Header() {
                             </div>
 
                             <div className='log-out'>
-                                <span className='logout'>Log-out</span>
                                 <span className='logout-icon'><MdLogout /></span>
+                                <span className='logout'>Log-out</span>
                             </div>
 
                         </div>
@@ -274,11 +274,11 @@ function Header() {
                         <div className='user-contents'>
                             <div className='notifications'>
                                 <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                <span className='notifications-text'>Notifications</span>
+                                
                             </div>
                             <div className='settings'>
                                 <span className='settings-icon'><IoSettingsOutline /></span>
-                                <span className='settings-text'>Settings</span>
+                              
                             </div>
                             <div className='user-log'>
                                 <div className='account'>
