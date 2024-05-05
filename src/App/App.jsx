@@ -38,7 +38,7 @@ function App() {
         <Helmet>
           <meta property='og:title' content='uSwapp'/>
           <meta property='og:description' content='Swap App'/>
-          <meta property='og:image' content="https://github.com/oguzcan-ayan/uSwapp-Project-with-React/blob/main/public/assets/images/uswapp-logo.svg"/>
+          <meta property='og:image' content="https://uswapp.vercel.app/public/assets/images/uswapp-logo.svg"/>
           <meta property='og:url' content='https://uswapp.vercel.app/'/>
           <meta property='og:type' content='website'/>
         </Helmet>
