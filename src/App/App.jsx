@@ -26,7 +26,6 @@ function App() {
 
   return (
     <>
-      <div>
         <MenuProvider>
           <Header />
           <ProductCategories />
@@ -42,7 +41,6 @@ function App() {
           <meta property='og:url' content='https://uswapp.vercel.app/'/>
           <meta property='og:type' content='website'/>
         </Helmet>
-      </div>
     </>
   )
 }
