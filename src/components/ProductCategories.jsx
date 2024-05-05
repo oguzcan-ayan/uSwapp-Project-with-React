@@ -51,8 +51,8 @@ function ProductCategories() {
         initialSlide: 0,
         infinite: true,
         dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 7,
+        slidesToScroll: 7,
         arrows: false,
         responsive: [
             {
@@ -87,7 +87,11 @@ function ProductCategories() {
         return (
             <section>
                 <div className='slider-container'>
-                    <button className='slick-prev-btn' onClick={() => slickRef.current?.slickPrev()}><FaArrowCircleLeft /></button>
+                    <button
+                        className='slick-prev-btn'
+                        onClick={() => slickRef.current?.slickPrev()}>
+                        <FaArrowCircleLeft />
+                    </button>
                     <Slider ref={slickRef} {...settings}>
                         <div>
                             <span><SlUserFemale /></span>
@@ -126,7 +130,12 @@ function ProductCategories() {
                             <span>Auto Parts</span>
                         </div>
                     </Slider>
-                    <button className='slick-next-btn' onClick={() => slickRef.current?.slickNext()} style={nextButtonStyle}><FaArrowCircleRight /></button>
+                    <button
+                        className='slick-next-btn'
+                        onClick={() => slickRef.current?.slickNext()}
+                        style={nextButtonStyle}>
+                        <FaArrowCircleRight />
+                    </button>
                 </div>
             </section>
         )

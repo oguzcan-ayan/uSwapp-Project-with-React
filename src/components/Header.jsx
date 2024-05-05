@@ -86,6 +86,10 @@ function Header() {
         setSelectedFlag(src);
     }
 
+    const handleChangeLang = () => {
+        setLanguages(!languages);
+    }
+
     const toggleTheme = () => {
         const now = Date.now();
         if (now - lastClickTime < 300) {
@@ -124,7 +128,7 @@ function Header() {
                     <IoIosArrowDown />
                 </span>
 
-                {selectedFlag && <img className='viewed-flag' src={selectedFlag} alt="viewed-flag" />}
+                {selectedFlag && <img className='viewed-flag' onClick={handleChangeLang} src={selectedFlag} alt="viewed-flag" />}
 
                 {languages && (
                     <div>
@@ -191,95 +195,34 @@ function Header() {
 
     if (isMobile) {
         return (
-            <>
-                <header>
-                    <div className='uswapp-header'>
+            <header>
+                <div className='uswapp-header'>
 
-                        <ProjectLogo />
+                    <ProjectLogo />
 
-                        {renderSearchbox()}
+                    {renderSearchbox()}
 
-                        <div className='searchbox-info'>
+                    <div className='searchbox-info'>
 
-                        </div>
+                    </div>
+
+                    <button
+                        className='more-btn'
+                        onClick={() => { openResponsiveMenu() }}
+                    >
+                        <GiHamburgerMenu />
+                    </button>
+
+                    <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
 
                         <button
-                            className='more-btn'
-                            onClick={() => { openResponsiveMenu() }}
+                            className='close-hamburger-btn'
+                            onClick={() => { closeResponsiveMenu() }}
                         >
-                            <GiHamburgerMenu />
+                            <MdCancel />
                         </button>
 
-                        <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
-
-                            <button
-                                className='close-hamburger-btn'
-                                onClick={() => { closeResponsiveMenu() }}
-                            >
-                                <MdCancel />
-                            </button>
-
-                            <div className='user-contents'>
-                                <div className='user-log'>
-                                    <div className='account'>
-                                        <span className='user-icon'><LuUser2 /></span>
-                                        <span className='username'>username</span>
-                                        <span className='user-mail'>user-mail@gmail.com</span>
-                                    </div>
-                                </div>
-
-                                <div className='notifications'>
-                                    <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                 
-                                </div>
-                                <div className='settings'>
-                                    <span className='settings-icon'><IoSettingsOutline /></span>
-                                   
-                                </div>
-
-                                {renderThemes()}
-                                {renderLangs()}
-
-                            </div>
-
-                            <div className='log-out'>
-                                <span className='logout-icon'><MdLogout /></span>
-                                <span className='logout'>Log-out</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </header>
-            </>
-        )
-    }
-
-    else {
-        return (
-            <>
-                <header>
-                    <div className='uswapp-header'>
-
-                        <ProjectLogo />
-
-                        {renderSearchbox()}
-
-                        <div className='searchbox-info'>
-
-                        </div>
-
-                        {renderLangs()}
-                        {renderThemes()}
-
                         <div className='user-contents'>
-                            <div className='notifications'>
-                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-                                
-                            </div>
-                            <div className='settings'>
-                                <span className='settings-icon'><IoSettingsOutline /></span>
-                              
-                            </div>
                             <div className='user-log'>
                                 <div className='account'>
                                     <span className='user-icon'><LuUser2 /></span>
@@ -287,14 +230,73 @@ function Header() {
                                     <span className='user-mail'>user-mail@gmail.com</span>
                                 </div>
                             </div>
-                            <div className='log-out'>
-                                <span className='logout-icon'><MdLogout /></span>
-                                <span className='logout'>Log-out</span>
+
+                            <div className='notifications'>
+                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
+
+                            </div>
+                            <div className='settings'>
+                                <span className='settings-icon'><IoSettingsOutline /></span>
+
+                            </div>
+
+                            {renderThemes()}
+                            {renderLangs()}
+
+
+                        </div>
+
+                        <div className='log-out'>
+                            <span className='logout-icon'><MdLogout /></span>
+                            <span className='logout'>Log-out</span>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+        )
+    }
+
+    else {
+        return (
+            <header>
+                <div className='uswapp-header'>
+
+                    <ProjectLogo />
+
+                    {renderSearchbox()}
+
+                    <div className='searchbox-info'>
+
+                    </div>
+
+                    <div className='lang-and-theme-container'>
+                        {renderLangs()}
+                        {renderThemes()}
+                    </div>
+                    <div className='user-contents'>
+                        <div className='notifications'>
+                            <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
+
+                        </div>
+                        <div className='settings'>
+                            <span className='settings-icon'><IoSettingsOutline /></span>
+
+                        </div>
+                        <div className='user-log'>
+                            <div className='account'>
+                                <span className='user-icon'><LuUser2 /></span>
+                                <span className='username'>username</span>
+                                <span className='user-mail'>user-mail@gmail.com</span>
                             </div>
                         </div>
+                        <div className='log-out'>
+                            <span className='logout-icon'><MdLogout /></span>
+                            <span className='logout'>Log-out</span>
+                        </div>
                     </div>
-                </header>
-            </>
+                </div>
+            </header>
         )
     }
 }
