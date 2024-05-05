@@ -34,10 +34,16 @@ function Footer() {
           </h4>
           <div className='contact-btns'>
             <button className='wp-contact-btn'>
-              <a href="#">Whatsapp <IoLogoWhatsapp /></a>
+              <a href="https://wa.me/+905376469421" target="_blank" rel="noreferrer">
+                Whatsapp
+                <IoLogoWhatsapp />
+              </a>
             </button>
             <button className='dc-contact-btn'>
-              <a href="#">Discord <FaDiscord /></a>
+              <a href="https://discord.gg/JUBnyUCb" target='_blank' rel='nopreferrer'>
+                Discord
+                <FaDiscord />
+              </a>
             </button>
           </div>
         </div>
@@ -51,10 +57,10 @@ function Footer() {
 
         <div className='uswapp-social-media'>
           <h4>Our Social Media Accounts</h4>
-          <a href='#'><FaFacebookF /></a>
-          <a href='#'><GrInstagram /></a>
-          <a href='#'><FaTwitter /></a>
-          <a href='#'><GrYoutube /></a>
+          <a href='https://www.facebook.com/oguzcan.ayan.75' target='_blank'><FaFacebookF /></a>
+          <a href='https://www.instagram.com/oguzcan.ayan1/' target='_blank'><GrInstagram /></a>
+          <a href='https://twitter.com/Oguzcan_Ayan_1' target='_blank'><FaTwitter /></a>
+          <a href='https://www.youtube.com/channel/UCLNwJurNmEdCrLkmIOQ_Eng' target='_blank'><GrYoutube /></a>
         </div>
 
         <div className='uswapp-mobile-apps'>
