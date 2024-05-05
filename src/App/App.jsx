@@ -38,7 +38,7 @@ function App() {
         <Helmet>
           <meta property='og:title' content='uSwapp'/>
           <meta property='og:description' content='Swap App'/>
-          <meta property='og:image' content="https://uswapp.vercel.app/public\assets\images\uswapp-logo.jpg"/>
+          <meta property='og:image' content="https://uswapp.vercel.app/uswapp-logo.jpg"/>
           <meta property='og:url' content='https://uswapp.vercel.app/'/>
           <meta property='og:type' content='website'/>
         </Helmet>
