@@ -4,20 +4,42 @@
 @media (max-width: 1200px) {
     header {
         .uswapp-header {
+
+            .searchbox{
+                input{
+                    height: 35px;
+                }
+
+                span {
+                    svg {
+                      width: 22px;
+                      height: 22px;
+                      margin-top: 5px;
+                    }
+                }
+            }
+
             .searchbox.active {
                 width: 25%;
             }
 
-            .lang-content {
-                flex-basis: 75px;
-
-                .change-lang {
-
-                    svg {
-                        width: 22px;
-                        height: 24px;
+            .lang-and-theme-container{
+                gap: 3rem;
+                .lang-content {
+                    flex-basis: 75px;
+    
+                    .change-lang {
+    
+                        svg {
+                            width: 22px;
+                            height: 24px;
+                        }
                     }
                 }
+            }
+            
+            .user-contents{
+                flex-basis: 275px;
             }
         }
     }

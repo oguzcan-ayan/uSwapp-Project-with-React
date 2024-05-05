@@ -156,29 +156,104 @@
                         margin-bottom: 0;
 
                         .change-theme {
+                            display: inline-block;
+                            height: fit-content;
 
                             .theme-label {
+                                font-size: 17px;
+                                position: relative;
+                                display: inline-block;
                                 width: 64px;
                                 height: 30px;
                             }
 
+                            .theme-label input {
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .theme-slider {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #73C0FC;
+                                transition: .4s;
+                                border-radius: 30px;
+                            }
+
                             .theme-slider:before {
+                                position: absolute;
+                                content: "";
                                 height: 25px;
                                 width: 25px;
+                                border-radius: 20px;
+                                left: 2px;
+                                bottom: 2px;
+                                z-index: 2;
+                                background-color: #e8e8e8;
+                                transition: .4s;
                             }
 
                             .sun svg {
+                                position: absolute;
+                                top: 6px;
+                                left: 36px;
+                                z-index: 1;
                                 width: 24px;
                                 height: 20px;
-                                left: 36px;
-                                top: 6px;
+                                animation: rotate 15s linear infinite;
                             }
 
                             .moon svg {
-                                width: 24px;
-                                height: 20px;
+                                fill: #73C0FC;
+                                position: absolute;
                                 top: 5px;
                                 left: 5px;
+                                z-index: 1;
+                                width: 24px;
+                                height: 20px;
+                                animation: tilt 5s linear infinite;
+                            }
+
+                            @keyframes rotate {
+
+                                0% {
+                                    transform: rotate(0);
+                                }
+
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+
+                            @keyframes tilt {
+
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+
+                                25% {
+                                    transform: rotate(-10deg);
+                                }
+
+                                75% {
+                                    transform: rotate(10deg);
+                                }
+
+                                100% {
+                                    transform: rotate(0deg);
+                                }
+                            }
+
+                            .checked-input:checked+.theme-slider {
+                                background-color: #183153;
+                            }
+
+                            .checked-input:focus+.theme-slider {
+                                box-shadow: 0 0 1px #183153;
                             }
 
                             .checked-input:checked+.theme-slider:before {
@@ -195,7 +270,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-                    
+
                     .logout-icon {
                         margin-left: 1rem;
 
@@ -252,7 +327,7 @@
                 position: absolute;
                 background: none;
                 border: none;
-                bottom: 14px;
+                top: 5px;
                 left: 5px;
                 color: $color1;
 
@@ -266,8 +341,8 @@
                 position: absolute;
                 background: none;
                 border: none;
-                bottom: 14px;
-                right: 0.5rem;
+                top: 5px;
+                right: 5px;
                 color: $color1;
 
                 svg {
@@ -290,7 +365,7 @@
 
                                     >span {
                                         text-align: center;
-                                      
+
                                         svg {
                                             width: 20px;
                                             height: 20px;
