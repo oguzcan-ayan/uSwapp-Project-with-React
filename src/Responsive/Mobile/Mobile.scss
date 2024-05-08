@@ -55,7 +55,7 @@
                 bottom: 1rem;
             }
 
-            .slick-next-btn{
+            .slick-next-btn {
                 bottom: 15px;
             }
 
@@ -75,6 +75,217 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    section {
+        .products-container {
+            .product-categories-title {
+                margin-left: 1rem;
+                font-size: 22px;
+            }
+
+            .slider-container {
+                margin-top: 5%;
+
+                .slick-prev-btn {
+                    left: 0;
+                    top: 0;
+                    bottom: 25%;
+                    font-size: 1rem;
+
+                    svg {
+                        width: 19px;
+                        height: 19px;
+                    }
+                }
+
+                .slick-next-btn {
+                    right: 0;
+                    top: 0;
+                    bottom: 25%;
+                    font-size: 1rem;
+
+                    svg {
+                        width: 19px;
+                        height: 19px;
+                    }
+                }
+
+                .slick-slider {
+                    .slick-list {
+                        .slick-track {
+                            >div {
+                                >div {
+                                    .product-container {
+                                        div {
+                                            svg {
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                        }
+
+                                        h3 {
+                                            font-size: 1rem;
+                                        }
+
+                                        p {
+                                            font-size: 13px;
+                                        }
+
+                                        &:first-child {
+                                            margin-left: 15%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .slick-dots {
+                        position: relative;
+                    }
+                }
+
+            }
+        }
+    }
+
+    section {
+        .info-container {
+            margin-top: 15%;
+
+            .short-info-about-project {
+                font-size: 1rem;
+                padding-top: 25px;
+                padding-bottom: 8px;
+            }
+
+            .short-info-about-aim {
+                font-size: 1rem;
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+            button {
+                width: 140px;
+                height: 40px;
+                font-size: 1rem;
+                font-weight: 700;
+
+                span {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    padding-right: 40px;
+
+                    span {
+                        left: calc(100% - 40px);
+                        color: #324B4C;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .uswapp-footer {
+            display: flex;
+            flex-direction: column;
+
+            .uswapp-about-us {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .uswapp-contact-us {
+                margin-left: 0;
+                margin-right: 0;
+
+                &-title {
+
+                    h4 {
+                        margin-top: 2rem;
+                    }
+
+                    span {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .uswapp-live-support {
+                margin-top: 2rem;
+                margin-left: 0;
+
+                &-title {
+
+                    h4 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .uswapp-social-media {
+                margin-left: 20px;
+                margin-right: 0;
+
+                h4 {
+                    margin: 4rem 0 20px 0;
+                }
+
+                &-icons {
+                    margin-left: 2rem;
+                }
+            }
+
+            .uswapp-mobile-apps {
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+
+                .app-store {
+                    width: 140px;
+                    height: 45px;
+                }
+
+                .google-play-store {
+                    width: 140px;
+                    height: 45px;
+                }
+
+                .app-gallery-huawei {
+                    width: 145px;
+                    height: 45px;
+                }
+            }
+
+            .uswapp-help {
+                margin-top: 3rem;
+                margin-left: 2rem;
+
+                p {
+                    margin-bottom: 14px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .uswapp-privacy {
+            height: 50px;
+
+            .all-rights {
+                font-size: 12px;
+            }
+
+            .privacy-policy {
+                font-size: 12px;
+                margin-top: 7px;
             }
         }
     }
