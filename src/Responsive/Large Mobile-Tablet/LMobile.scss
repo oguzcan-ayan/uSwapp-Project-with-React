@@ -132,6 +132,12 @@
                             }
                         }
 
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 2.5rem;
+                        }
+
                         .viewed-flag {
                             width: 2.5rem;
                             height: 2.5rem;
@@ -381,6 +387,150 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    section {
+        .products-container {
+            margin-top: 3rem;
+
+            .product-categories-title {
+                margin-left: 20px;
+                font-size: 1.5rem
+            }
+
+            .slider-container {
+                margin-top: 4%;
+
+                .slick-prev-btn {
+                    left: 2px;
+                    font-size: 1.5rem;
+                }
+
+                .slick-next-btn {
+                    right: 3px;
+                    font-size: 1.5rem;
+                }
+
+                .slick-slider {
+                    .slick-list {
+                        .slick-track {
+                            >div {
+                                >div {
+                                    .product-container {
+                                        div {
+                                            svg {
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                        }
+
+                                        h3 {
+                                            font-size: 17px;
+                                        }
+
+                                        p {
+                                            font-size: 14px;
+                                        }
+
+                                        button {
+                                            width: 85%;
+                                            height: 2rem;
+                                            font-size: 11px;
+                                            margin-left: 10px;
+
+                                            svg {
+                                                width: 10px;
+                                                height: 10px;
+
+                                            }
+                                        }
+
+                                        &:first-child {
+                                            margin-left: 2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    section {
+        .info-container {
+            margin-left: 5%;
+            margin-right: 5%;
+
+            .short-info-about-project {
+                font-size: 18px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+
+            .short-info-about-aim {
+                font-size: 18px;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+
+    footer {
+        .uswapp-footer {
+
+            .uswapp-contact-us {
+                margin-left: 15%;
+
+                &-title {
+
+                    span {
+                        margin-top: 36%;
+                    }
+                }
+            }
+
+            .uswapp-live-support {
+                margin-left: 20%;
+            }
+
+            .uswapp-mobile-apps {
+                margin-left: 15%;
+
+                &-title {
+                    gap: 7px;
+                }
+
+                .app-store {
+                    width: 120px;
+                }
+
+                .google-play-store {
+                    width: 120px;
+                }
+
+                .app-gallery-huawei {
+                    width: 120px;
+                }
+            }
+
+            .uswapp-help {
+                margin-left: 20%;
+            }
+        }
+
+        .uswapp-privacy {
+
+            .all-rights {
+                font-size: 13px;
+            }
+
+            .privacy-policy {
+                font-size: 13px;
             }
         }
     }

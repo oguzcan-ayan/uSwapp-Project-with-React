@@ -5,16 +5,16 @@
     header {
         .uswapp-header {
 
-            .searchbox{
-                input{
+            .searchbox {
+                input {
                     height: 35px;
                 }
 
                 span {
                     svg {
-                      width: 22px;
-                      height: 22px;
-                      margin-top: 5px;
+                        width: 22px;
+                        height: 22px;
+                        margin-top: 5px;
                     }
                 }
             }
@@ -23,13 +23,14 @@
                 width: 25%;
             }
 
-            .lang-and-theme-container{
+            .lang-and-theme-container {
                 gap: 3rem;
+
                 .lang-content {
                     flex-basis: 75px;
-    
+
                     .change-lang {
-    
+
                         svg {
                             width: 22px;
                             height: 24px;
@@ -37,8 +38,8 @@
                     }
                 }
             }
-            
-            .user-contents{
+
+            .user-contents {
                 flex-basis: 275px;
             }
         }
@@ -64,4 +65,229 @@
             }
         }
     }
+
+    section {
+        .products-container {
+
+            .product-categories-title {
+                margin-left: 26px;
+            }
+
+            .slider-container {
+
+                .slick-prev-btn {
+                    left: 2px;
+                    font-size: 27px;
+                }
+
+                .slick-next-btn {
+                    right: 3px;
+                    font-size: 27px;
+                }
+
+                .slick-slider {
+                    .slick-list {
+                        .slick-track {
+                            >div {
+                                >div {
+                                    .product-container {
+                                        div {
+                                            svg {
+                                                width: 150px;
+                                                height: 150px;
+                                            }
+                                        }
+
+                                        h3 {
+                                            font-size: 20px;
+                                        }
+
+                                        p {
+                                            font-size: 17px;
+                                        }
+
+                                        button {
+                                            height: 34px;
+                                            font-size: 14px;
+                                            margin-left: 15px;
+
+                                            svg {
+                                                width: 12px;
+                                                height: 12px;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    section {
+        .info-container {
+            .short-info-about-project {
+                font-size: 22px;
+                padding-top: 2.5rem;
+                padding-bottom: 14px;
+            }
+
+            .short-info-about-aim {
+                font-size: 22px;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            button {
+                width: 150px;
+                height: 45px;
+                font-size: 18px;
+
+                span {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .uswapp-footer {
+            padding: 60px;
+
+            .uswapp-about-us {
+                margin-right: 5%;
+
+                &-title {
+                    h4 {
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .uswapp-contact-us {
+                margin-right: 5%;
+                margin-bottom: 1rem;
+
+                .contact-btns {
+
+                    .wp-contact-btn {
+                        font-size: 1rem;
+
+                        a {
+                            svg {
+                                width: 27px;
+                                height: 27px;
+                            }
+
+                        }
+                    }
+
+                    .dc-contact-btn {
+                        font-size: 1rem;
+
+                        a {
+                            svg {
+                                width: 27px;
+                                height: 27px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .uswapp-live-support {
+
+                &-title {
+                    gap: 5px;
+
+                    h4 {
+                        font-size: 17px;
+                    }
+
+                    span {
+
+                        svg {
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+                }
+            }
+
+            .uswapp-social-media {
+                margin-right: 5%;
+                margin-left: 5%;
+
+                h4 {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .uswapp-mobile-apps {
+
+                &-title {
+                    gap: 3px;
+
+                    h4 {
+                        font-size: 17px;
+                    }
+
+                    span {
+                        margin-top: 20%;
+
+                        svg {
+                            width: 19px;
+                            height: 19px;
+                        }
+                    }
+                }
+
+                .app-store {
+                    width: 125px;
+                    height: 35px;
+                }
+
+                .google-play-store {
+                    width: 125px;
+                    height: 35px;
+                }
+
+                .app-gallery-huawei {
+                    width: 125px;
+                }
+            }
+
+            .uswapp-help {
+                margin-left: 5%;
+                margin-top: 20px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .uswapp-privacy {
+            padding-top: 10px;
+
+            .all-rights {
+                font-size: 15px;
+            }
+
+            .privacy-policy {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
 }
