@@ -56,6 +56,16 @@ function ProductCategories() {
         arrows: false,
         responsive: [
             {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },   
+            {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 3,

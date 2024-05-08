@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductBoxes from './ProductBoxes';
 import { CiImageOn } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function MostOfferedProducts() {
 
@@ -26,6 +27,7 @@ function MostOfferedProducts() {
             productBtnSymbol={productBtnSymbol} />);
 
     const slickRef = useRef(null);
+    const { isHamburgerButtonOpen } = useMenu();
 
     const settings = {
         speed: 500,
@@ -37,7 +39,17 @@ function MostOfferedProducts() {
         arrows: false,
         responsive: [
             {
-                breakpoint: 576,
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -47,18 +59,21 @@ function MostOfferedProducts() {
                 }
             },
             {
-                breakpoint: 300,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                     arrows: false
                 }
-            }
+            },
         ]
-
     };
+
+    const nextButtonStyle = {
+        'z-index': isHamburgerButtonOpen ? '-1' : '10'
+    }
 
     return (
         <section>
@@ -73,7 +88,9 @@ function MostOfferedProducts() {
                     <Slider ref={slickRef} {...settings}>
                         {mostOfferedArray}
                     </Slider>
-                    <button className='slick-next-btn'
+                    <button 
+                        className='slick-next-btn'
+                        style={nextButtonStyle}
                         onClick={() => slickRef.current?.slickNext()}>
                         <FaArrowCircleRight />
                     </button>

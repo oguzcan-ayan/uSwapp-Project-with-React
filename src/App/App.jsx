@@ -26,14 +26,14 @@ function App() {
 
   return (
     <>
-        <MenuProvider>
-          <Header />
-          <ProductCategories />
-          <NewAddedProducts />
-          <MostOfferedProducts />
-          <InfoAboutProject />
-          <Footer />
-        </MenuProvider>
+      <MenuProvider>
+        <Header />
+        <ProductCategories />
+        <NewAddedProducts />
+        <MostOfferedProducts />
+        <InfoAboutProject />
+        <Footer />
+      </MenuProvider>
     </>
   )
 }
