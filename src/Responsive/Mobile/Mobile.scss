@@ -292,14 +292,15 @@
 
     .login-and-signup-container {
         background: #324B4C;
-        .swap-image{
+
+        .swap-image {
             display: none;
         }
 
         .entries-project-logo {
             top: 5%;
             left: 35%;
-            
+
             img {
                 width: 100px;
                 height: 150px;
@@ -331,7 +332,7 @@
                         padding: 11px 1rem;
                     }
 
-                    .keep-login-confirmator{
+                    .keep-login-confirmator {
                         font-size: 13px;
                     }
                 }
@@ -347,7 +348,7 @@
                     margin-top: 14px;
                 }
 
-                .hr{
+                .hr {
                     margin: 20px 0 0 1.5rem;
                 }
             }
@@ -356,6 +357,7 @@
                 .signup-form {
                     .group {
                         margin-bottom: 0;
+
                         .user {
                             font-size: 12px;
                             margin-top: 0.5rem;
@@ -392,7 +394,7 @@
                         font-size: 14px;
                     }
 
-                    .hr{
+                    .hr {
                         margin: 15px 0 0 1.5rem;
                     }
                 }
