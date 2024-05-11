@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import Slider from 'react-slick';
@@ -17,7 +17,6 @@ function NewAddedProducts() {
   const productInfo = "Product information";
   const productBtn = "OFFER NOW";
   const productBtnSymbol = <FaArrowRightLong />;
-  const [isDesktop, setIsDesktop] = useState(false);
   const newAddedArray = new Array(50).fill().map((_, index) =>
     <ProductBoxes
       key={index}
@@ -73,7 +72,7 @@ function NewAddedProducts() {
   };
 
   const nextButtonStyle = {
-    'z-index': isHamburgerButtonOpen ? '-1' : '10'
+    'zIndex': isHamburgerButtonOpen ? '-1' : '10'
   }
 
   return (

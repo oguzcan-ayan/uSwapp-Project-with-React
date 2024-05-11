@@ -72,7 +72,7 @@ function MostOfferedProducts() {
     };
 
     const nextButtonStyle = {
-        'z-index': isHamburgerButtonOpen ? '-1' : '10'
+        'zIndex': isHamburgerButtonOpen ? '-1' : '10'
     }
 
     return (
