@@ -294,4 +294,98 @@
             }
         }
     }
+
+    .login-and-signup-container {
+        .entries-project-logo {
+            top: 20%;
+            left: 15%;
+
+            img {
+                width: 250px;
+                height: 300px;
+            }
+        }
+
+        .entries-container {
+            top: 15%;
+            left: 65%;
+
+            .login-container {
+                .tab {
+                    font-size: 20px;
+                }
+            }
+
+            .login-form {
+                .group {
+                    margin-bottom: 10px;
+
+                    .user {
+                        font-size: 14px;
+                    }
+
+                    .password {
+                        font-size: 14px;
+                    }
+
+                    .input-log-sign {
+                        padding: 13px 18px;
+                    }
+                }
+
+                .login-btn {
+                    padding: 13px 18px;
+                    font-size: 18px;
+                    margin-top: 22px;
+                }
+
+                .forgot-password {
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                }
+            }
+
+            .signup-container {
+                .signup-form {
+                    .group {
+                        margin-bottom: 10px;
+
+                        .user {
+                            font-size: 14px;
+                        }
+
+                        .password {
+                            font-size: 14px;
+                        }
+
+                        .repeat-password {
+                            font-size: 14px;
+                        }
+
+                        .email {
+                            font-size: 14px;
+                        }
+
+                        .input-log-sign {
+                            padding: 13px 18px;
+                        }
+                    }
+
+                    .signup-btn {
+                        padding: 13px 18px;
+                        font-size: 18px;
+                        margin-top: 22px;
+                    }
+
+                    .already-member {
+                        margin-top: 18px;
+                    }
+                }
+            }
+
+            .hr {
+                margin: 30px 0 0 1.5rem;
+            }
+        }
+    }
 }

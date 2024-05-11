@@ -534,4 +534,94 @@
             }
         }
     }
+
+    .login-and-signup-container {
+        .entries-project-logo {
+            left: 5%;
+
+            img {
+                width: 200px;
+                height: 250px;
+            }
+        }
+
+        .entries-container {
+            left: 50%;
+
+            .login-container {
+                .tab {
+                    font-size: 18px;
+                }
+            }
+
+            .login-form {
+                .group {
+                    .user {
+                        font-size: 13px;
+                    }
+
+                    .password {
+                        font-size: 13px;
+                    }
+
+                    .input-log-sign {
+                        padding: 12px 17px;
+                    }
+
+                    .keep-login-confirmator{
+                        font-size: 14px;
+                    }
+                }
+
+                .login-btn {
+                    padding: 12px 17px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-top: 18px;
+                    letter-spacing: 0.5px;
+                }
+
+                .forgot-password {
+                    font-size: 15px;
+                }
+            }
+
+            .signup-container {
+                .signup-form {
+                    .group {
+                        .user {
+                            font-size: 13px;
+                        }
+
+                        .password {
+                            font-size: 13px;
+                        }
+
+                        .repeat-password {
+                            font-size: 13px;
+                        }
+
+                        .email {
+                            font-size: 13px;
+                        }
+
+                        .input-log-sign {
+                            padding: 12px 17px;
+                        }
+                    }
+
+                    .signup-btn {
+                        padding: 12px 17px;
+                        font-size: 17px;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .already-member {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

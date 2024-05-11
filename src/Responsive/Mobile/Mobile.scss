@@ -289,4 +289,114 @@
             }
         }
     }
+
+    .login-and-signup-container {
+        background: #324B4C;
+        .swap-image{
+            display: none;
+        }
+
+        .entries-project-logo {
+            top: 5%;
+            left: 35%;
+            
+            img {
+                width: 100px;
+                height: 150px;
+            }
+        }
+
+        .entries-container {
+            top: 30%;
+            left: 20%;
+            min-height: 400px;
+
+            .login-container {
+                .tab {
+                    font-size: 1rem;
+                }
+            }
+
+            .login-form {
+                .group {
+                    .user {
+                        font-size: 12px;
+                    }
+
+                    .password {
+                        font-size: 12px;
+                    }
+
+                    .input-log-sign {
+                        padding: 11px 1rem;
+                    }
+
+                    .keep-login-confirmator{
+                        font-size: 13px;
+                    }
+                }
+
+                .login-btn {
+                    padding: 11px 1rem;
+                    font-size: 1rem;
+                    margin-top: 20px;
+                }
+
+                .forgot-password {
+                    font-size: 14px;
+                    margin-top: 14px;
+                }
+
+                .hr{
+                    margin: 20px 0 0 1.5rem;
+                }
+            }
+
+            .signup-container {
+                .signup-form {
+                    .group {
+                        margin-bottom: 0;
+                        .user {
+                            font-size: 12px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 5px;
+                        }
+
+                        .password {
+                            font-size: 12px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 5px;
+                        }
+
+                        .repeat-password {
+                            font-size: 12px;
+                        }
+
+                        .email {
+                            font-size: 12px;
+                        }
+
+                        .input-log-sign {
+                            padding: 11px 1rem;
+                        }
+                    }
+
+                    .signup-btn {
+                        padding: 11px 1rem;
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                    }
+
+                    .already-member {
+                        margin-top: 12px;
+                        font-size: 14px;
+                    }
+
+                    .hr{
+                        margin: 15px 0 0 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -290,4 +290,38 @@
         }
     }
 
+    .login-and-signup-container {
+        .entries-project-logo {
+            img {
+                width: 250px;
+                height: 300px;
+            }
+        }
+
+        .entries-container {
+            top: 20%;
+            
+            .login-form {
+                .login-btn {
+                    margin-top: 20px;
+                }
+            }
+
+            .signup-container {
+                .signup-form {
+                    .signup-btn {
+                        margin-top: 20px;
+                    }
+
+                    .already-member {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+            .hr {
+                margin: 25px 0 0 1.5rem;
+            }
+        }
+    }
 }
