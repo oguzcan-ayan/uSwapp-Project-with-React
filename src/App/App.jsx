@@ -13,6 +13,7 @@ import MostOfferedProducts from '../components/MostOfferedProducts';
 import Footer from '../components/Footer';
 import InfoAboutProject from '../components/InfoAboutProject';
 import { Helmet } from 'react-helmet';
+import LoginAndSignupPage from '../pages/LoginAndSignupPage';
 
 function App() {
 
@@ -26,14 +27,15 @@ function App() {
 
   return (
     <>
-      <MenuProvider>
+     {/*  <MenuProvider>
         <Header />
         <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject />
         <Footer />
-      </MenuProvider>
+      </MenuProvider> */}
+      <LoginAndSignupPage />
     </>
   )
 }
