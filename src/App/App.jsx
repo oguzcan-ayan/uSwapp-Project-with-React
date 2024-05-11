@@ -27,15 +27,15 @@ function App() {
 
   return (
     <>
-     {/*  <MenuProvider>
+      <MenuProvider>
         <Header />
         <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject />
         <Footer />
-      </MenuProvider> */}
-      <LoginAndSignupPage />
+      </MenuProvider>
+      {/* <LoginAndSignupPage /> */}
     </>
   )
 }
