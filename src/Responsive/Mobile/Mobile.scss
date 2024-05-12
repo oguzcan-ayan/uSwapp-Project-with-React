@@ -199,6 +199,18 @@
             .uswapp-about-us {
                 margin-left: 0;
                 margin-right: 0;
+
+                h3{
+                    margin-bottom: 2.5rem;
+                }
+
+                &-title{
+                    span{
+                        svg{
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
             }
 
             .uswapp-contact-us {
