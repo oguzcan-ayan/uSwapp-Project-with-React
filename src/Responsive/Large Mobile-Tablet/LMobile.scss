@@ -568,7 +568,7 @@
                         padding: 12px 17px;
                     }
 
-                    .keep-login-confirmator{
+                    .keep-login-confirmator {
                         font-size: 14px;
                     }
                 }
@@ -619,6 +619,51 @@
 
                     .already-member {
                         margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-add-container {
+
+        .product {
+            margin-left: 1.5rem;
+
+            div {
+                label {
+                    font-size: 17px;
+                    margin-bottom: 12px;
+                }
+
+                textarea {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .add {
+            gap: 12px;
+
+            &-photo-btn {
+                font-size: 18px;
+
+                .camera-icon {
+                    svg {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+
+            &-product-btn {
+                font-size: 19px;
+                gap: 5px;
+                
+                .add-icon {
+                    svg {
+                        width: 14px;
+                        height: 14px;
                     }
                 }
             }

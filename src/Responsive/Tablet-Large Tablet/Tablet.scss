@@ -461,4 +461,55 @@
             }
         }
     }
+
+    .product-add-container {
+
+        .product-add-title {
+            font-size: 28px;
+        }
+
+        .product {
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 3rem;
+
+            div {
+                label {
+                    margin-bottom: 14px;
+                }
+
+                select {
+                    font-size: 16px;
+                    padding: 10px 10px;
+                }
+
+                textarea {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .add {
+            gap: 1rem;
+
+            &-photo-btn {
+                height: 2.5rem;
+                padding: 15px;
+                font-size: 20px;
+
+                .camera-icon {
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+
+            &-product-btn {
+                padding: 15px 25px;
+                margin-top: 0.5rem;
+                font-size: 20px;
+                gap: 0.5rem;
+            }
+        }
+    }
 }
