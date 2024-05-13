@@ -31,7 +31,7 @@ function LoginAndSignupPage() {
                             <form className='signup-form'>
                                 <div className='group'>
                                     <label htmlFor='username' className='user'>Username</label>
-                                    <input id='username' type="text" className='input-log-sign' />
+                                    <input id='username' type="text" className='input-log-sign' placeholder='example'/>
                                 </div>
                                 <div className='group'>
                                     <label htmlFor='password' className='password'>Password</label>
@@ -43,7 +43,7 @@ function LoginAndSignupPage() {
                                 </div>
                                 <div className='group'>
                                     <label htmlFor="email" className='email'>Email Address</label>
-                                    <input id='email' type="email" className='input-log-sign' />
+                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
                                 </div>
 
                                 <button className='signup-btn' type='submit' value="Sign Up">Sign up</button>
@@ -61,7 +61,7 @@ function LoginAndSignupPage() {
                         <form className='login-form'>
                             <div className='group'>
                                 <label htmlFor='username' className='user'>Username</label>
-                                <input id='username' type="text" className='input-log-sign' />
+                                <input id='username' type="text" className='input-log-sign' placeholder='example'/>
                             </div>
 
                             <div className='group'>

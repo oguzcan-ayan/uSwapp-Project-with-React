@@ -193,6 +193,10 @@ function Header() {
         )
     }
 
+ /*    const responsiveMenuOpen = {
+        'zIndex': isHamburgerButtonOpen ? '10' : '-1'
+    } */
+
     if (isMobile) {
         return (
             <header>
@@ -213,7 +217,7 @@ function Header() {
                         <GiHamburgerMenu />
                     </button>
 
-                    <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
+                    <div /* style={responsiveMenuOpen} */ className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
 
                         <button
                             className='close-hamburger-btn'
