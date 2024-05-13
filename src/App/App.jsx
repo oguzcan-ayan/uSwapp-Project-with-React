@@ -14,6 +14,7 @@ import Footer from '../components/Footer';
 import InfoAboutProject from '../components/InfoAboutProject';
 import { Helmet } from 'react-helmet';
 import LoginAndSignupPage from '../pages/LoginAndSignupPage';
+import ProductAddPage from '../pages/ProductAddPage';
 
 function App() {
 
@@ -29,13 +30,14 @@ function App() {
     <>
       <MenuProvider>
         <Header />
-        <ProductCategories />
+   {/*      <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
-        <InfoAboutProject />
+        <InfoAboutProject /> */}
+        <ProductAddPage />
         <Footer />
       </MenuProvider>
-      {/* <LoginAndSignupPage /> */}
+     {/*  <LoginAndSignupPage /> */}
     </>
   )
 }
