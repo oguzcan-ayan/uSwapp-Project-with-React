@@ -10,11 +10,11 @@ function ProductAddPage() {
                 <div className='product'>
                     <div>
                         <label htmlFor="product-name">Product Name</label>
-                        <input id='product-name' type="text" className='product-name' required placeholder='Example' />
+                        <input id='product-name' type="text" className='product-name' required placeholder='Chair' />
                     </div>
                     <div>
                         <label htmlFor="product-brand">Product Brand</label>
-                        <input id='product-brand' type="text" className='product-brand' required placeholder='Watch' />
+                        <input id='product-brand' type="text" className='product-brand' required placeholder='IKEA' />
 
                     </div>
                     <div>
@@ -61,7 +61,8 @@ function ProductAddPage() {
                         <select id="product-status">
                             <option value="default-status">Select a Product Status...</option>
                             <option value="zero-hand">Zero Hand</option>
-                            <option value="second-hand">Second Hand</option>
+                            <option value="second-hand">Good</option>
+                            <option value="second-hand">Bad</option>
                         </select>
                     </div>
                     <div>
@@ -70,7 +71,7 @@ function ProductAddPage() {
                     </div>
                     <div>
                         <label htmlFor="swap-request">Swap Request</label>
-                        <input id='swap-request' type="text" className='swap-request' placeholder='Phone' />
+                        <input id='swap-request' type="text" className='swap-request' placeholder='Table' />
                     </div>
                 </div>
                 <div className='add'>
