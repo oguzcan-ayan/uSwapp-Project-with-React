@@ -15,6 +15,7 @@ import InfoAboutProject from '../components/InfoAboutProject';
 import { Helmet } from 'react-helmet';
 import LoginAndSignupPage from '../pages/LoginAndSignupPage';
 import ProductAddPage from '../pages/ProductAddPage';
+import UserProfile from '../pages/UserProfile';
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject /> */}
-        <ProductAddPage />
+        {/* <ProductAddPage /> */}
+        <UserProfile />
         <Footer />
       </MenuProvider>
      {/*  <LoginAndSignupPage /> */}
