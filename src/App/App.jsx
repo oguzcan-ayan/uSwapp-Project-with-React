@@ -30,16 +30,16 @@ function App() {
 
   return (
     <>
-      <MenuProvider>
-        <Header />
-        <ProductCategories />
+     {/*  <MenuProvider>
+        <Header /> */}
+    {/*     <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
-        <InfoAboutProject />
+        <InfoAboutProject /> */}
         {/* <ProductAddPage /> */}
-        {/* <UserProfile /> */}
-        <Footer />
-      </MenuProvider>
+        <UserProfile />
+     {/*    <Footer />
+      </MenuProvider> */}
       {/* <ErrorPage /> */}
       {/* <LoginAndSignupPage /> */}
     </>

@@ -46,23 +46,27 @@ function LoginAndSignupPage() {
                                     <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
                                 </div>
                                 <div className='group'>
-                                    <label htmlFor="gender" className='gender'>Email Address</label>
-                                    <input id='gender' type="checkbox" className='input-log-sign' placeholder='example@example.com'/>
+                                    <label htmlFor="gender" className='gender'>Gender</label>
+                                    <select id='gender'>
+                                        <option value="default-gender">Select Your Gender...</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
                                 </div>
                                 <div className='group'>
-                                    <label htmlFor="email" className='email'>Email Address</label>
-                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
+                                    <label htmlFor="address" className='address'>Address</label>
+                                    <input id='address' type="text" className='input-log-sign' placeholder='New York/NYC, United States'/>
                                 </div>
                                 <div className='group'>
-                                    <label htmlFor="email" className='email'>Email Address</label>
-                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
+                                    <label htmlFor="contact-num" className='contact-num'>Contact Number</label>
+                                    <input id='contact-num' type="tel" className='input-log-sign' placeholder='05XX XXX XX XX'/>
                                 </div>
 
                                 <button className='signup-btn' type='submit' value="Sign Up">Sign up</button>
 
                                 <span className='hr' />
 
-                                <div className='already-member' /* onClick={() => setUserEntry(false)} */>
+                                <div className='already-member'>
                                     <a href="#">Already Member?</a>
                                 </div>
                             </form>
@@ -76,6 +80,10 @@ function LoginAndSignupPage() {
                                 <input id='username' type="text" className='input-log-sign' placeholder='example'/>
                             </div>
 
+                            <div className='group'>
+                                <label htmlFor='email' className='email'>Email Address</label>
+                                <input id='email' type="email" className='input-log-sign' />
+                            </div>
                             <div className='group'>
                                 <label htmlFor='password' className='password'>Password</label>
                                 <input id='password' type="password" className='input-log-sign' />
