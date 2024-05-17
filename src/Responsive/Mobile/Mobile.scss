@@ -414,57 +414,81 @@
         }
     }
 
-    .product-add-container {
+    section {
+        .product-add-container {
 
-        .product-add-title {
-            font-size: 26px;
-        }
+            .product-add-title {
+                font-size: 26px;
+            }
 
-        .product {
-            grid-template-columns: repeat(1, 1fr);
-            margin-left: 2rem;
-            column-gap: 0;
-            row-gap: 2rem;
+            .product {
+                grid-template-columns: repeat(1, 1fr);
+                margin-left: 2rem;
+                column-gap: 0;
+                row-gap: 2rem;
 
-            div {
-                label {
+                div {
+                    label {
+                        font-size: 18px;
+                        margin-bottom: 14px;
+                    }
+
+                    input {
+                        padding: 10px 15px;
+
+                    }
+
+                    select {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .add {
+                gap: 14px;
+
+                &-photo-btn {
+                    .camera-icon {
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
+                }
+
+                &-product-btn {
                     font-size: 18px;
-                    margin-bottom: 14px;
-                }
+                    gap: 4px;
 
-                input {
-                    padding: 10px 15px;
-
-                }
-
-                select {
-                    font-size: 1rem;
+                    .add-icon {
+                        svg {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
                 }
             }
         }
+    }
 
-        .add {
-            gap: 14px;
+    section {
+        .user-profile {
+            gap: 2rem;
 
-            &-photo-btn {
-                .camera-icon {
-                    svg {
-                        width: 1rem;
-                        height: 1rem;
+            &-detail {
+                p {
+                    >span {
+                        font-size: 20px;
+                    }
+
+                    >span+span {
+                        font-size: 17px;
                     }
                 }
             }
 
-            &-product-btn {
-                font-size: 18px;
-                gap: 4px;
-
-                .add-icon {
-                    svg {
-                        width: 13px;
-                        height: 13px;
-                    }
-                }
+            .edit-btn {
+                height: 2.5rem;
             }
         }
     }

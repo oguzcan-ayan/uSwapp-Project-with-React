@@ -325,39 +325,63 @@
         }
     }
 
-    .product-add-container {
-        .product {
-            margin-left: 30px;
+    section {
+        .product-add-container {
+            .product {
+                margin-left: 30px;
 
-            div {
-                label {
-                    font-size: 20px;
-                }
+                div {
+                    label {
+                        font-size: 20px;
+                    }
 
-                input {
-                    font-size: 18px;
-                }
+                    input {
+                        font-size: 18px;
+                    }
 
-                select {
-                    font-size: 15px;
-                }
-            }
-        }
-
-        .add {
-            &-photo-btn {
-                font-size: 20px;
-
-                .camera-icon {
-                    svg {
-                        width: 18px;
-                        height: 18px;
+                    select {
+                        font-size: 15px;
                     }
                 }
             }
 
-            &-product-btn {
-                font-size: 22px;
+            .add {
+                &-photo-btn {
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    .camera-icon {
+                        svg {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+
+                &-product-btn {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    section {
+        .user-profile {
+
+            &-detail {
+                p {
+                    >span {
+                        font-size: 1.5rem;
+                    }
+
+                    >span+span {
+                        font-size: 21px;
+                    }
+                }
+            }
+
+            .edit-btn {
+                padding: 20px 25px;
             }
         }
     }

@@ -625,45 +625,75 @@
         }
     }
 
-    .product-add-container {
+    section {
+        .product-add-container {
 
-        .product {
-            margin-left: 1.5rem;
+            .product {
+                margin-left: 1.5rem;
 
-            div {
-                label {
-                    font-size: 17px;
-                    margin-bottom: 12px;
-                }
+                div {
+                    label {
+                        font-size: 17px;
+                        margin-bottom: 12px;
+                    }
 
-                textarea {
-                    margin-right: 0.5rem;
-                }
-            }
-        }
-
-        .add {
-            gap: 12px;
-
-            &-photo-btn {
-                font-size: 18px;
-
-                .camera-icon {
-                    svg {
-                        width: 17px;
-                        height: 17px;
+                    textarea {
+                        margin-right: 0.5rem;
                     }
                 }
             }
 
-            &-product-btn {
-                font-size: 19px;
-                gap: 5px;
-                
-                .add-icon {
+            .add {
+                gap: 12px;
+
+                &-photo-btn {
+                    font-size: 18px;
+
+                    .camera-icon {
+                        svg {
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+
+                &-product-btn {
+                    font-size: 19px;
+                    gap: 5px;
+                    height: 2.5rem;
+
+                    .add-icon {
+                        svg {
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .user-profile {
+            gap: 2rem;
+
+            &-icon {
+                span {
                     svg {
-                        width: 14px;
-                        height: 14px;
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+            }
+
+            &-detail {
+                p {
+                    >span {
+                        font-size: 21px;
+                    }
+
+                    >span+span {
+                        font-size: 18px;
                     }
                 }
             }
