@@ -16,6 +16,7 @@ import { Helmet } from 'react-helmet';
 import LoginAndSignupPage from '../pages/LoginAndSignupPage';
 import ProductAddPage from '../pages/ProductAddPage';
 import UserProfile from '../pages/UserProfile';
+import ErrorPage from '../pages/ErrorPage';
 
 function App() {
 
@@ -29,16 +30,17 @@ function App() {
 
   return (
     <>
-      <MenuProvider>
-        <Header />
+      {/* <MenuProvider>
+        <Header /> */}
    {/*      <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject /> */}
         {/* <ProductAddPage /> */}
-        <UserProfile />
-        <Footer />
-      </MenuProvider>
+        {/* <UserProfile /> */}
+      {/*   <Footer />
+      </MenuProvider> */}
+      <ErrorPage />
      {/*  <LoginAndSignupPage /> */}
     </>
   )
