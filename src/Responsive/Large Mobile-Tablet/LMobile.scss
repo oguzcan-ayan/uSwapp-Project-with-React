@@ -699,4 +699,75 @@
             }
         }
     }
+
+    .error-container {
+
+        &-first {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .error-404 {
+                &-icon {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            .page-not-found {
+                font-size: 26px;
+            }
+        }
+
+        &-second {
+            .exclamation {
+                &-icon {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .error-reason {
+                font-size: 20px;
+                text-align: center;
+                margin-left: 0;
+                line-height: 1.5rem;
+            }
+        }
+
+        .exit-btns-from-error-page {
+            width: 75%;
+            margin-top: 2rem;
+
+            .go-back-btn {
+                font-size: 1rem;
+                font-weight: 600;
+                padding-left: 1rem;
+
+                &-icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    left: 10px;
+                    bottom: 11px;
+                }
+            }
+
+            .go-to-home-page-btn {
+                font-size: 1rem;
+                font-weight: 600;
+                padding-left: 22px;
+
+                &-icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    left: 10px;
+                    bottom: 12px;
+                }
+            }
+        }
+    }
 }

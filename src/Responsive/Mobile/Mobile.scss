@@ -482,13 +482,69 @@
                     }
 
                     >span+span {
-                        font-size: 17px;
+                        font-size: 16px;
                     }
                 }
             }
 
             .edit-btn {
                 height: 2.5rem;
+            }
+        }
+    }
+
+    .error-container {
+
+        &-first {
+            .page-not-found {
+                text-align: center;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+
+        &-second {
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .error-reason {
+                font-size: 18px;
+            }
+        }
+
+        .exit-btns-from-error-page {
+            width: 100%;
+            margin-top: 1.5rem;
+
+            .go-back-btn {
+                font-size: 1rem;
+                padding-left: 1.5rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+                letter-spacing: 0.5px;
+
+                &-icon {
+                    width: 20px;
+                    height: 20px;
+                    left: 5px;
+                    bottom: 13px;
+                }
+            }
+
+            .go-to-home-page-btn {
+                padding-left: 2rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                letter-spacing: 0.5px;
+
+                &-icon {
+                    width: 20px;
+                    height: 20px;
+                    left: 5px;
+                    bottom: 14px;
+                }
             }
         }
     }
