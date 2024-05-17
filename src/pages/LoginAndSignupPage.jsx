@@ -45,6 +45,18 @@ function LoginAndSignupPage() {
                                     <label htmlFor="email" className='email'>Email Address</label>
                                     <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
                                 </div>
+                                <div className='group'>
+                                    <label htmlFor="gender" className='gender'>Email Address</label>
+                                    <input id='gender' type="checkbox" className='input-log-sign' placeholder='example@example.com'/>
+                                </div>
+                                <div className='group'>
+                                    <label htmlFor="email" className='email'>Email Address</label>
+                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
+                                </div>
+                                <div className='group'>
+                                    <label htmlFor="email" className='email'>Email Address</label>
+                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
+                                </div>
 
                                 <button className='signup-btn' type='submit' value="Sign Up">Sign up</button>
 
