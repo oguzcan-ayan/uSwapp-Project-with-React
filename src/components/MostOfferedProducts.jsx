@@ -88,7 +88,7 @@ function MostOfferedProducts() {
                     <Slider ref={slickRef} {...settings}>
                         {mostOfferedArray}
                     </Slider>
-                    <button 
+                    <button
                         className='slick-next-btn'
                         style={nextButtonStyle}
                         onClick={() => slickRef.current?.slickNext()}>
