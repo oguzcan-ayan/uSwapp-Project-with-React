@@ -17,6 +17,7 @@ import LoginAndSignupPage from '../pages/LoginAndSignupPage';
 import ProductAddPage from '../pages/ProductAddPage';
 import UserProfile from '../pages/UserProfile';
 import ErrorPage from '../pages/ErrorPage';
+import ProductViewPage from '../pages/ProductViewPage';
 
 function App() {
 
@@ -32,12 +33,13 @@ function App() {
     <>
       <MenuProvider>
         <Header />
-    {/*     <ProductCategories />
+        {/*     <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject /> */}
         {/* <ProductAddPage /> */}
-        <UserProfile />
+        {/* <UserProfile /> */}
+        <ProductViewPage />
         <Footer />
       </MenuProvider>
       {/* <ErrorPage /> */}
