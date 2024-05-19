@@ -770,4 +770,42 @@
             }
         }
     }
+
+    section {
+        .product-view-container {       
+            .product-view {
+                &-images {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 0;
+
+                    .view-more-plus-icon {
+                        position: absolute;
+                        top: 7px;
+                        right: 7px;
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
+                &-info {
+                    margin-left: 1.5rem;
+
+                    div {
+                        >span {
+                            font-size: 20px;
+                        }
+
+                        >span+span {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

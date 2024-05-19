@@ -288,6 +288,11 @@
                 margin-left: 10%;
                 margin-right: 10%;
 
+                span {
+                    svg {
+                        margin-left: 0.5rem;
+                    }
+                }
             }
 
             .uswapp-contact-us {
@@ -296,10 +301,6 @@
 
                 &-title {
                     gap: 6px;
-
-                    span {
-                        margin-top: 35%;
-                    }
                 }
 
                 .contact-btns {
@@ -536,7 +537,7 @@
     }
 
     .error-container {
-        
+
         &-second {
             .error-reason {
                 font-size: 22px;
@@ -544,6 +545,50 @@
 
             .exit-btns-from-error-page {
                 margin-top: 2.5rem;
+            }
+        }
+    }
+
+    section {
+        .product-view-container {
+            gap: 2rem;
+            
+            .product-view {
+                &-images {
+                    gap: 3rem;
+                    margin-left: 2rem;
+                    grid-template-columns: repeat(4, 1fr);
+                    position: relative;
+
+                    .view-more-plus-icon {
+                        svg {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    &-more {
+                    position: absolute;
+                    top: 120%;
+                    left: 35%;
+                    }
+                }
+
+                &-info {
+                    margin-left: 2rem;
+
+                    div {
+                        >span {
+                            font-size: 21px;
+                            font-weight: 700;
+                        }
+
+                        >span+span {
+                            font-size: 19px;
+                            line-height: 20px;
+                        }
+                    }
+                }
             }
         }
     }

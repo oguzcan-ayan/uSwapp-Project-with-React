@@ -222,6 +222,7 @@
 
                 &-title {
                     gap: 0;
+                    line-height: 20px;
                 }
             }
 
@@ -230,6 +231,14 @@
 
                 &-title {
                     gap: 5px;
+
+                    h4{
+                        margin-top: 65px;
+                    }
+
+                    span{
+                        margin-top: 25%;
+                    }
                 }
 
                 .contact-btns {
@@ -250,6 +259,7 @@
 
                 h4 {
                     margin-bottom: 35px;
+                    line-height: 20px;
                 }
 
                 &-icons {
