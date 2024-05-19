@@ -543,7 +543,7 @@
 
     section {
         .product-view-container {
-                   
+
             .product-view {
                 &-images {
                     grid-template-columns: repeat(2, 1fr);
@@ -552,10 +552,10 @@
                     margin-left: 1rem;
 
                     .view-more-plus-icon {
-                       display: none;
+                        display: none;
                     }
 
-                    &-more{
+                    &-more {
                         position: static;
                         font-size: 20px;
                         letter-spacing: 1px;
