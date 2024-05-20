@@ -71,7 +71,7 @@ function NewAddedProducts() {
     ]
   };
 
-  const nextButtonStyle = {
+  const sliderStyle = {
     'zIndex': isHamburgerButtonOpen ? '-1' : '10'
   }
 
@@ -79,7 +79,7 @@ function NewAddedProducts() {
     <section>
       <div className='products-container'>
         <h1 className='product-categories-title'>{productCategoriesTitle}</h1>
-        <div className='slider-container'>
+        <div className='slider-container' style={sliderStyle}>
           <button
             className='slick-prev-btn'
             onClick={() => slickRef.current?.slickPrev()}>
@@ -90,7 +90,7 @@ function NewAddedProducts() {
           </Slider>
           <button
             className='slick-next-btn'
-            style={nextButtonStyle}
+            style={sliderStyle}
             onClick={() => slickRef.current?.slickNext()}>
             <FaArrowCircleRight />
           </button>

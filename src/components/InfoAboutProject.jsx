@@ -1,7 +1,15 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa6";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function InfoAboutProject() {
+
+    const { isHamburgerButtonOpen } = useMenu();
+
+    const buttonStyle = {
+        'zIndex': isHamburgerButtonOpen ? '-1' : '10'
+      }
+
     return (
         <section>
             <div className='info-container'>
@@ -18,7 +26,7 @@ function InfoAboutProject() {
                     money and develop a platform that complies with the swap
                     only policy.
                 </p>
-                <button>
+                <button style={buttonStyle}>
                     More...
                     <span>
                         <FaArrowRight />

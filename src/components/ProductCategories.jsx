@@ -89,14 +89,14 @@ function ProductCategories() {
 
     };
 
-    const nextButtonStyle = {
+    const sliderStyle = {
         'zIndex': isHamburgerButtonOpen ? '-1' : '10'
     }
 
     if (isMobile) {
         return (
             <section>
-                <div className='slider-container'>
+                <div className='slider-container' style={sliderStyle}>
                     <button
                         className='slick-prev-btn'
                         onClick={() => slickRef.current?.slickPrev()}>
@@ -143,7 +143,7 @@ function ProductCategories() {
                     <button
                         className='slick-next-btn'
                         onClick={() => slickRef.current?.slickNext()}
-                        style={nextButtonStyle}>
+                        style={sliderStyle}>
                         <FaArrowCircleRight />
                     </button>
                 </div>

@@ -31,19 +31,19 @@ function App() {
 
   return (
     <>
-     {/*  <MenuProvider>
-        <Header /> */}
-        {/*     <ProductCategories />
+      <MenuProvider>
+        <Header />
+        {/* <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject /> */}
         {/* <ProductAddPage /> */}
         {/* <UserProfile /> */}
-        {/* <ProductViewPage /> */}
-     {/*    <Footer />
-      </MenuProvider> */}
+        <ProductViewPage />
+        <Footer />
+      </MenuProvider>
       {/* <ErrorPage /> */}
-      <LoginAndSignupPage />
+      {/* <LoginAndSignupPage /> */}
     </>
   )
 }

@@ -9,8 +9,16 @@ import { FaTwitter } from "react-icons/fa";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function Footer() {
+
+  const { isHamburgerButtonOpen } = useMenu();
+
+  const buttonStyle = {
+    'zIndex': isHamburgerButtonOpen ? '-1' : '10'
+  }
+
   return (
     <footer>
       <div className='uswapp-footer'>
@@ -33,13 +41,13 @@ function Footer() {
             <span><MdContactMail /></span>
           </div>
           <div className='contact-btns'>
-            <button className='wp-contact-btn'>
+            <button className='wp-contact-btn' style={buttonStyle}>
               <a href="https://wa.me/+905376469421" target="_blank" rel="noreferrer">
                 Whatsapp
                 <IoLogoWhatsapp />
               </a>
             </button>
-            <button className='dc-contact-btn'>
+            <button className='dc-contact-btn' style={buttonStyle}>
               <a href="https://discord.gg/JUBnyUCb" target='_blank' rel='nopreferrer'>
                 Discord
                 <FaDiscord />

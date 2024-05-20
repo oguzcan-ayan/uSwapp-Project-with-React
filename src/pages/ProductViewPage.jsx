@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaImage, FaPlus } from "react-icons/fa6";
+import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 
 function ProductViewPage() {
 
@@ -12,13 +13,19 @@ function ProductViewPage() {
         return <span key={index}><FaImage /></span>
     })
 
+    const { isHamburgerButtonOpen } = useMenu();
+
+    const imageStyle = {
+      'zIndex': isHamburgerButtonOpen ? '-1' : '10'
+    }
+
     return (
         <>
             <section>
                 <div className='product-view-container'>
                     <h2 className='product-view-title'>Product View</h2>
                     <div className='product-view'>
-                        <div className='product-view-images'>
+                        <div className='product-view-images' style={imageStyle}>
                             {productViewImages.slice(0, 3)}
                             {!showAllImages && <span className='view-more-plus-icon'><FaPlus /></span>}
                             {!showAllImages &&
