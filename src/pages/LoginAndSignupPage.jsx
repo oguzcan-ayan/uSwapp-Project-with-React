@@ -29,37 +29,39 @@ function LoginAndSignupPage() {
                     {userEntry ?
                         <div className='signup-container'>
                             <form className='signup-form'>
-                                <div className='group'>
-                                    <label htmlFor='username' className='user'>Username</label>
-                                    <input id='username' type="text" className='input-log-sign' placeholder='example'/>
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor='password' className='password'>Password</label>
-                                    <input id='password' type="password" className='input-log-sign' />
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor="repeat-password" className='repeat-password'>Repeat Password</label>
-                                    <input id='repeat-password' type="password" className='input-log-sign' />
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor="email" className='email'>Email Address</label>
-                                    <input id='email' type="email" className='input-log-sign' placeholder='example@example.com'/>
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor="gender" className='gender'>Gender</label>
-                                    <select id='gender'>
-                                        <option value="default-gender">Select Your Gender...</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                    </select>
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor="address" className='address'>Address</label>
-                                    <input id='address' type="text" className='input-log-sign' placeholder='New York/NYC, United States'/>
-                                </div>
-                                <div className='group'>
-                                    <label htmlFor="contact-num" className='contact-num'>Contact Number</label>
-                                    <input id='contact-num' type="tel" className='input-log-sign' placeholder='05XX XXX XX XX'/>
+                                <div className='signup-form-user-entry-info'>
+                                    <div className='group'>
+                                        <label htmlFor='username' className='user'>Username</label>
+                                        <input id='username' type="text" className='input-log-sign' placeholder='example' />
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor='password' className='password'>Password</label>
+                                        <input id='password' type="password" className='input-log-sign' />
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor="repeat-password" className='repeat-password'>Repeat Password</label>
+                                        <input id='repeat-password' type="password" className='input-log-sign' />
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor="email" className='email'>Email Address</label>
+                                        <input id='email' type="email" className='input-log-sign' placeholder='example@example.com' />
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor="gender" className='gender'>Gender</label>
+                                        <select id='gender'>
+                                            <option value="default-gender">Select Your Gender...</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor="address" className='address'>Address</label>
+                                        <input id='address' type="text" className='input-log-sign' placeholder='New York/NYC, United States' />
+                                    </div>
+                                    <div className='group'>
+                                        <label htmlFor="contact-num" className='contact-num'>Contact Number</label>
+                                        <input id='contact-num' type="tel" className='input-log-sign' placeholder='05XX XXX XX XX' />
+                                    </div>
                                 </div>
 
                                 <button className='signup-btn' type='submit' value="Sign Up">Sign up</button>
@@ -77,7 +79,7 @@ function LoginAndSignupPage() {
                         <form className='login-form'>
                             <div className='group'>
                                 <label htmlFor='username' className='user'>Username</label>
-                                <input id='username' type="text" className='input-log-sign' placeholder='example'/>
+                                <input id='username' type="text" className='input-log-sign' placeholder='example' />
                             </div>
 
                             <div className='group'>

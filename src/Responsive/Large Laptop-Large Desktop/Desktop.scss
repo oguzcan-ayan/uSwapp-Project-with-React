@@ -232,11 +232,11 @@
                 &-title {
                     gap: 5px;
 
-                    h4{
+                    h4 {
                         margin-top: 65px;
                     }
 
-                    span{
+                    span {
                         margin-top: 25%;
                     }
                 }
@@ -317,16 +317,19 @@
         }
 
         .entries-container {
-            top: 15%;
-            left: 65%;
-
             .login-container {
+                top: 10%;
+                left: 60%;
+
                 .tab {
                     font-size: 20px;
                 }
             }
 
             .login-form {
+                top: 15%;
+                left: 60%;
+
                 .group {
                     margin-bottom: 10px;
 
@@ -335,6 +338,10 @@
                     }
 
                     .password {
+                        font-size: 14px;
+                    }
+
+                    .email{
                         font-size: 14px;
                     }
 
@@ -356,6 +363,9 @@
             }
 
             .signup-container {
+                top: 15%;
+                left: 50%;
+
                 .signup-form {
                     .group {
                         margin-bottom: 10px;
@@ -373,6 +383,18 @@
                         }
 
                         .email {
+                            font-size: 14px;
+                        }
+
+                        .gender{
+                            font-size: 14px;
+                        }
+
+                        .address{
+                            font-size: 14px;
+                        }
+
+                        .contact-num{
                             font-size: 14px;
                         }
 

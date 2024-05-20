@@ -292,22 +292,29 @@
 
     .login-and-signup-container {
         .entries-project-logo {
+            left: 10%;
+
             img {
-                width: 250px;
-                height: 300px;
+                width: 225px;
+                height: 275px;
             }
         }
 
         .entries-container {
-            top: 15%;
-
+            .login-container{
+                left: 50%;
+            }
             .login-form {
+                left: 50%;
+                
                 .login-btn {
                     margin-top: 20px;
                 }
             }
 
             .signup-container {
+                left: 45%;
+                
                 .signup-form {
                     .signup-btn {
                         margin-top: 20px;
@@ -318,10 +325,10 @@
                     }
                 }
             }
+        }
 
-            .hr {
-                margin: 25px 0 0 1.5rem;
-            }
+        .hr {
+            margin: 25px 0 0 1.5rem;
         }
     }
 

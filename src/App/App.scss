@@ -1099,13 +1099,14 @@ footer {
   }
 
   .entries-container {
-    position: absolute;
-    left: 70%;
-    top: 15%;
     max-width: 525px;
     min-height: 500px;
 
     .login-container {
+      position: absolute;
+      left: 70%;
+      top: 20%;
+
       .login {
         display: none;
 
@@ -1149,8 +1150,10 @@ footer {
     .login-form {
       perspective: 1000px;
       transform-style: preserve-3d;
-      position: relative;
+      position: absolute;
       min-height: 345px;
+      left: 70%;
+      top: 25%;
 
       .group {
         margin-bottom: 15px;
@@ -1224,6 +1227,12 @@ footer {
           margin-bottom: 0.5rem;
         }
 
+        .email {
+          display: block;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+        }
+
         .password {
           display: block;
           text-transform: uppercase;
@@ -1262,7 +1271,7 @@ footer {
       }
 
       .forgot-password {
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-left: 2.5rem;
         text-align: center;
 
@@ -1273,52 +1282,90 @@ footer {
     }
 
     .signup-container {
+      position: absolute;
+      left: 65%;
+      top: 25%;
+
       .signup-form {
-        .group {
-          margin-bottom: 15px;
+        &-user-entry-info {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20%;
 
-          .user {
-            width: 100%;
-            display: block;
-            text-transform: uppercase;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-          }
+          .group {
+            margin-bottom: 15px;
 
-          .password {
-            display: block;
-            text-transform: uppercase;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-          }
+            .user {
+              width: 100%;
+              display: block;
+              text-transform: uppercase;
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+            }
 
-          .repeat-password {
-            display: block;
-            text-transform: uppercase;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-          }
+            .password {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+            }
 
-          .email {
-            display: block;
-            text-transform: uppercase;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-          }
+            .repeat-password {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
+            }
 
-          .input-log-sign {
-            width: 100%;
-            display: block;
-            color: $base-color1;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 25px;
-            background: rgba(255, 255, 255, .2);
-          }
+            .email {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
+            }
 
-          input {
-            &::placeholder {
-              color: rgba(255, 255, 255, 0.5);
+            .gender {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
+            }
+
+            .address {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
+            }
+
+            .contact-num {
+              display: block;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
+            }
+
+            select {
+              background-color: #414245;
+              color: rgba(255, 255, 255, 0.7);
+              height: 2rem;
+              border-radius: 5px;
+            }
+
+            .input-log-sign {
+              width: 100%;
+              display: block;
+              color: $base-color1;
+              border: none;
+              padding: 15px 20px;
+              border-radius: 25px;
+              background: rgba(255, 255, 255, .2);
+            }
+
+            input {
+              &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
             }
           }
         }
@@ -1339,7 +1386,7 @@ footer {
 
         .already-member {
           text-align: center;
-          margin-top: 2rem;
+          margin-top: 1rem;
           margin-left: 2.5rem;
 
           a {
@@ -1351,7 +1398,7 @@ footer {
 
     .hr {
       display: block;
-      margin: 40px 0 30px 1.5rem;
+      margin: 20px 0 0 1.5rem;
       height: 2px;
       background: rgba(255, 255, 255, .2);
     }

@@ -399,24 +399,27 @@
     .login-and-signup-container {
         .entries-project-logo {
             top: 25%;
-            left: 10%;
+            left: 5%;
 
             img {
-                width: 225px;
-                height: 275px;
+                width: 200px;
+                height: 250px;
             }
         }
 
         .entries-container {
-            left: 55%;
-
             .login-container {
+                top: 20%;
+
                 .tab {
                     color: rgba(200, 200, 200);
                 }
             }
 
             .login-form {
+                top: 25%;
+                left: 50%;
+
                 .group {
                     color: rgba(200, 200, 200);
 
@@ -437,6 +440,9 @@
             }
 
             .signup-container {
+                top: 25%;
+                left: 40%;
+
                 .signup-form {
                     .group {
                         color: rgba(200, 200, 200);
@@ -552,7 +558,7 @@
     section {
         .product-view-container {
             gap: 2rem;
-            
+
             .product-view {
                 &-images {
                     gap: 3rem;
@@ -568,9 +574,9 @@
                     }
 
                     &-more {
-                    position: absolute;
-                    top: 120%;
-                    left: 35%;
+                        position: absolute;
+                        top: 120%;
+                        left: 35%;
                     }
                 }
 

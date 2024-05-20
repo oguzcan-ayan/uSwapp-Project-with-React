@@ -537,30 +537,39 @@
 
     .login-and-signup-container {
         .entries-project-logo {
-            left: 5%;
+            top: 5%;
+            left: 35%;
 
-            img {
-                width: 200px;
-                height: 250px;
+            img{
+                width: 150px;
+                height: 200px;
             }
         }
 
         .entries-container {
-            left: 50%;
-
             .login-container {
+                top: 35%;
+                left: 35%;
+
                 .tab {
                     font-size: 18px;
                 }
             }
 
             .login-form {
+                top: 40%;
+                left: 30%;
+
                 .group {
                     .user {
                         font-size: 13px;
                     }
 
                     .password {
+                        font-size: 13px;
+                    }
+
+                    .email{
                         font-size: 13px;
                     }
 
@@ -583,10 +592,14 @@
 
                 .forgot-password {
                     font-size: 15px;
+                    margin-right: 5px;
                 }
             }
 
             .signup-container {
+                top: 40%;
+                left: 15%;
+        
                 .signup-form {
                     .group {
                         .user {
@@ -605,6 +618,18 @@
                             font-size: 13px;
                         }
 
+                        .gender{
+                            font-size: 13px;
+                        }
+
+                        .address{
+                            font-size: 13px;
+                        }
+
+                        .contact-num{
+                            font-size: 13px;
+                        }
+
                         .input-log-sign {
                             padding: 12px 17px;
                         }
@@ -615,12 +640,22 @@
                         font-size: 17px;
                         font-weight: 600;
                         letter-spacing: 0.5px;
+                        margin-top: 0;
+                        position: absolute;
+                        width: 50%;
+                        right: -10%;
+                        bottom: 12%;
                     }
 
                     .already-member {
-                        margin-top: 15px;
+                        margin-top: 10px;
                     }
                 }
+            }
+
+
+            .hr{
+                margin: 10px 20px 0 2rem;
             }
         }
     }
