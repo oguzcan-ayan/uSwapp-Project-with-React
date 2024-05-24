@@ -18,8 +18,7 @@ import ProductAddPage from '../pages/ProductAddPage';
 import UserProfile from '../pages/UserProfile';
 import ErrorPage from '../pages/ErrorPage';
 import ProductViewPage from '../pages/ProductViewPage';
-import { RouterProvider } from 'react-router-dom';
-import { router } from '../Tools/Router/Router';
+import MainLayout from '../Layouts/MainLayout';
 
 function App() {
 
@@ -33,19 +32,20 @@ function App() {
 
   return (
     <>
-      {/* <RouterProvider router={router}>
+      {/* 
          </MainLayout>
     </RouterProvider> */}
       <MenuProvider>
-        <Header />
+        <MainLayout />
+        {/* <Header /> */}
       {/*   <ProductCategories />
         <NewAddedProducts />
         <MostOfferedProducts />
         <InfoAboutProject /> */}
-        <ProductAddPage />
+        {/* <ProductAddPage /> */}
         {/* <UserProfile /> */}
         {/* <ProductViewPage /> */}
-        <Footer />
+        {/* <Footer /> */}
       </MenuProvider>
       {/* <ErrorPage /> */}
       {/* <LoginAndSignupPage /> */}

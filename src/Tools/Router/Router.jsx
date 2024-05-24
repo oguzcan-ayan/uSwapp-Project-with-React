@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import MainLayout from '../../Layouts/MainLayout';
 import ErrorPage from '../../pages/ErrorPage';
 import HomePageLayout from '../../Layouts/HomePageLayout';
 import ProductAddLayout from '../../Layouts/ProductAddLayout';
@@ -9,15 +8,15 @@ import ProductViewLayout from '../../Layouts/ProductViewLayout';
 import ProductViewPage from '../../pages/ProductViewPage';
 import UserProfileLayout from '../../Layouts/UserProfileLayout';
 import UserProfile from '../../pages/UserProfile';
+import App from '../../App/App';
 
 
-export const router = [
+export const router = createBrowserRouter([
 
   {
     name: "Homepage",
-    link: "/",
     path: "/",
-    element: <MainLayout />,
+    element: <App />,
     errorElement: <ErrorPage />,
     breadcrumb: "Homepage",
     children: [
@@ -66,6 +65,5 @@ export const router = [
       }
     ]
   }
-]
+])
 
-export default createBrowserRouter(router);
