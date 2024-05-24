@@ -39,8 +39,33 @@
                 }
             }
 
+            .product-btns {
+                button{
+                    height: 30px;
+                    font-size: 14px;
+
+                    &:last-child{
+                        margin-top: 10px;
+                    }
+                }
+            }
+
             .user-contents {
-                flex-basis: 275px;
+                .user-log {
+                    .account {
+                        .open-profile-menu {
+                            padding: 3px;
+                        }
+                    }
+                }
+            }
+
+            .log-out {
+                margin-right: 0.5rem;
+            }
+
+            .scroll-to-top-btn{
+                bottom: 1.5rem;
             }
         }
     }
@@ -77,12 +102,12 @@
 
                 .slick-prev-btn {
                     left: 2px;
-                    font-size: 27px;
+                    font-size: 35px;
                 }
 
                 .slick-next-btn {
                     right: 3px;
-                    font-size: 27px;
+                    font-size: 35px;
                 }
 
                 .slick-slider {
@@ -116,6 +141,9 @@
                                                 height: 12px;
 
                                             }
+                                        }
+                                        &:first-child{
+                                            margin-left: 43px;
                                         }
                                     }
                                 }

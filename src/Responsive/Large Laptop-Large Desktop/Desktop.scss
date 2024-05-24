@@ -57,77 +57,84 @@
                 }
             }
 
+            .product-btns {
+                button{
+                    font-size: 15px;
+                    font-weight: 600;
+
+                    &:last-child{
+                        margin-top: 12px;
+                    }
+                }
+            }
+
             .user-contents {
-                flex-basis: 300px;
-
-                .notifications {
-
-                    .notifications-icon {
-                        svg {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-
-                    .notifications-text {
-                        font-size: 14px;
-
-                    }
-                }
-
-                .settings {
-
-                    .settings-icon {
-                        svg {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-
-                    .settings-text {
-                        font-size: 14px;
-                    }
-                }
-
                 .user-log {
-
                     .account {
+                        .open-profile-menu {
+                            padding: 5px;
 
-                        .user-icon {
-                            width: 2rem;
-                            height: 2rem;
+                            .username-and-mail {
+                                .username {
+                                    font-size: 14px;
+                                }
 
-                            svg {
-                                width: 1.5rem;
-                                height: 1.5rem;
-                                margin-top: 3px;
+                                .user-mail {
+                                    font-size: 14px;
+                                }
                             }
                         }
 
-                        .username {
-                            font-size: 14px;
-                        }
+                        .user-special-btns {
 
-                        .user-mail {
-                            font-size: 14px;
+                            .notifications {
+                                .notifications-icon {
+                                    svg {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+
+                                .notifications-text {
+                                    font-size: 14px;
+
+                                }
+                            }
+
+                            .settings {
+                                .settings-icon {
+                                    svg {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+
+                                .settings-text {
+                                    font-size: 14px;
+                                }
+                            }
                         }
                     }
                 }
+            }
 
-                .log-out {
+            .log-out {
 
-                    .logout-icon {
+                .logout-icon {
 
-                        svg {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-
-                    .logout {
-                        font-size: 14px;
+                    svg {
+                        width: 20px;
+                        height: 20px;
                     }
                 }
+
+                .logout {
+                    font-size: 14px;
+                }
+            }
+
+            .scroll-to-top-btn{
+                left: auto;
             }
         }
     }
@@ -166,11 +173,11 @@
             .slider-container {
 
                 .slick-prev-btn {
-                    font-size: 28px;
+                    font-size: 2.5rem;
                 }
 
                 .slick-next-btn {
-                    font-size: 28px;
+                    font-size: 2.5rem;
                     right: 0;
                 }
 
@@ -200,7 +207,7 @@
                                         }
 
                                         &:first-child {
-                                            margin-left: 44px;
+                                            margin-left: 47px;
                                         }
                                     }
                                 }
@@ -341,7 +348,7 @@
                         font-size: 14px;
                     }
 
-                    .email{
+                    .email {
                         font-size: 14px;
                     }
 
@@ -386,15 +393,15 @@
                             font-size: 14px;
                         }
 
-                        .gender{
+                        .gender {
                             font-size: 14px;
                         }
 
-                        .address{
+                        .address {
                             font-size: 14px;
                         }
 
-                        .contact-num{
+                        .contact-num {
                             font-size: 14px;
                         }
 

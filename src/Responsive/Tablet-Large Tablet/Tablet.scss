@@ -101,81 +101,63 @@
                 }
             }
 
+
+            .product-btns {
+                button {
+                    height: 26px;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+
+                    &:last-child {
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+
             .user-contents {
-                flex-basis: 250px;
-
-                .notifications {
-                    margin-top: 5px;
-
-                    .notifications-icon {
-                        svg {
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
-
-                    .notifications-text {
-                        font-size: 12px;
-                        margin-top: 5px;
-                    }
-                }
-
-                .settings {
-                    margin-top: 5px;
-
-                    .settings-icon {
-                        svg {
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
-
-                    .settings-text {
-                        font-size: 12px;
-                        margin-top: 5px;
-                    }
-                }
-
                 .user-log {
-
                     .account {
-                        margin-top: 3px;
-
                         .user-icon {
-                            width: 1.5rem;
-                            height: 1.5rem;
+                            width: 2rem;
+                            height: 2rem;
 
                             svg {
-                                width: 1rem;
-                                height: 1rem;
+                                width: 1.5rem;
+                                height: 1.5rem;
                             }
                         }
 
-                        .username {
-                            font-size: 12px;
-                        }
+                        .open-profile-menu {
+                            top: 75px;
 
-                        .user-mail {
-                            font-size: 12px;
+                            .username-and-mail {
+                                .username {
+                                    font-size: 13px;
+                                }
+
+                                .user-mail {
+                                    font-size: 13px;
+                                }
+                            }
                         }
                     }
                 }
+            }
 
-                .log-out {
+            .log-out {
+                .logout {
+                    margin-top: 5px;
+                    font-size: 13px;
+                    letter-spacing: 0.5px;
+                }
+            }
 
-                    .logout-icon {
-                        margin-top: 5px;
+            .scroll-to-top-btn{
+                bottom: 1rem;
 
-                        svg {
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
-
-                    .logout {
-                        font-size: 12px;
-                        margin-top: 5px;
-                    }
+                .arrow-up{
+                    width: 2.5rem;
+                    height: 2rem;
                 }
             }
         }
@@ -214,12 +196,12 @@
             .slider-container {
                 .slick-prev-btn {
                     left: 5px;
-                    font-size: 25px;
+                    font-size: 30px;
                 }
 
                 .slick-next-btn {
                     right: 6px;
-                    font-size: 25px;
+                    font-size: 30px;
                 }
 
                 .slick-slider {
