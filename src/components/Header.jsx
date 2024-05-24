@@ -9,6 +9,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
+import ScrollButton from './ScrollButton';
 
 function Header() {
 
@@ -17,9 +18,13 @@ function Header() {
     const [isFocused, setIsFocused] = useState(false);
     const [languages, setLanguages] = useState(false);
     const langboxRef = useRef(null);
+    const profileRef = useRef(null);
+    const productRef = useRef(null);
     const [themes, setThemes] = useState('light');
     const [lastClickTime, setLastClickTime] = useState(0);
     const { isHamburgerButtonOpen, openResponsiveMenu, closeResponsiveMenu } = useMenu();
+    const [isProfileOpen, setIsProfileOpen] = useState(false);
+    const [isProductButtonOpen, setIsProductButtonOpen] = useState(false);
 
     const langs = [
         {
@@ -81,6 +86,35 @@ function Header() {
         }
 
     }, [langboxRef])
+
+    useEffect(() => {
+
+        const handleClickOutsideProfileBox = (event) => {
+            if (profileRef.current && !profileRef.current.contains(event.target)) {
+                setIsProfileOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutsideProfileBox);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutsideProfileBox);
+        }
+    }, [profileRef])
+
+    useEffect(() => {
+        const handleClickOutsideProductBox = (event) => {
+            if (productRef.current && !productRef.current.contains(event.target)) {
+                setIsProductButtonOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutsideProductBox);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutsideProductBox);
+        }
+    }, [productRef])
 
     const handleFlagClick = (src) => {
         setSelectedFlag(src);
@@ -212,7 +246,7 @@ function Header() {
                     >
                         <GiHamburgerMenu />
                     </button>
-
+                    <div className={`overlay ${isHamburgerButtonOpen ? 'overlay-visible' : ''}`}></div>
                     <div className={`responsive-menu ${isHamburgerButtonOpen ? 'responsive-menu-close' : ''}`}>
 
                         <button
@@ -229,6 +263,11 @@ function Header() {
                                     <span className='username'>username</span>
                                     <span className='user-mail'>user-mail@gmail.com</span>
                                 </div>
+                            </div>
+
+                            <div className='product-btns'>
+                                <button>Free Product ADD+</button>
+                                <button>View Your Product</button>
                             </div>
 
                             <div className='notifications'>
@@ -252,6 +291,7 @@ function Header() {
                         </div>
 
                     </div>
+                    <ScrollButton />
                 </div>
             </header>
         )
@@ -274,27 +314,62 @@ function Header() {
                         {renderLangs()}
                         {renderThemes()}
                     </div>
+
+                    <div className='product-btns-container'>
+                        <button
+                            onClick={() => setIsProductButtonOpen(!isProductButtonOpen)}
+                            className='product-btns-wrapper'
+                            ref={productRef}
+                        >
+                            <p>Product...</p>
+                        </button>
+
+                        {
+                            isProductButtonOpen &&
+
+                            <div className='product-btns'>
+                                <button>Free Product ADD+</button>
+                                <button>View Your Product</button>
+                            </div>
+                        }
+                    </div>
+
                     <div className='user-contents'>
-                        <div className='notifications'>
-                            <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
-
-                        </div>
-                        <div className='settings'>
-                            <span className='settings-icon'><IoSettingsOutline /></span>
-
-                        </div>
                         <div className='user-log'>
                             <div className='account'>
-                                <span className='user-icon'><LuUser2 /></span>
-                                <span className='username'>username</span>
-                                <span className='user-mail'>user-mail@gmail.com</span>
+                                <span
+                                    className='user-icon'
+                                    onClick={() => setIsProfileOpen(!isProfileOpen)}
+                                    ref={profileRef}
+                                >
+                                    <LuUser2 />
+                                </span>
+                                {isProfileOpen &&
+                                    <div className='open-profile-menu'>
+                                        <div className='username-and-mail'>
+                                            <span className='username'>username</span>
+                                            <span className='user-mail'>user-mail@gmail.com</span>
+                                        </div>
+                                        <div className='user-special-btns'>
+                                            <div className='notifications'>
+                                                <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
+                                            </div>
+                                            <div className='settings'>
+                                                <span className='settings-icon'><IoSettingsOutline /></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         </div>
-                        <div className='log-out'>
-                            <span className='logout-icon'><MdLogout /></span>
-                            <span className='logout'>Log-out</span>
-                        </div>
                     </div>
+                    <div className='log-out'>
+                        <span className='logout-icon'><MdLogout /></span>
+                        <span className='logout'>Log-out</span>
+                    </div>
+
+                    <ScrollButton />
                 </div>
             </header>
         )

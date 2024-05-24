@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowCircleLeft } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -83,7 +83,7 @@ function MostOfferedProducts() {
                     <button
                         className='slick-prev-btn'
                         onClick={() => slickRef.current?.slickPrev()}>
-                        <FaArrowCircleLeft />
+                        <IoIosArrowBack />
                     </button>
                     <Slider ref={slickRef} {...settings}>
                         {mostOfferedArray}
@@ -92,7 +92,7 @@ function MostOfferedProducts() {
                         className='slick-next-btn'
                         style={sliderStyle}
                         onClick={() => slickRef.current?.slickNext()}>
-                        <FaArrowCircleRight />
+                        <IoIosArrowForward />
                     </button>
                 </div>
             </div>

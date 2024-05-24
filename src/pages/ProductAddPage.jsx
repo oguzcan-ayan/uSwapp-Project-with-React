@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { FaCamera } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 
 function ProductAddPage() {
+
+    const fileInputRef = useRef(null);
+    const [productImage, setProductImage] = useState(null);
+
+    const handleButtonClick = () => {
+        fileInputRef.current.click();
+    }
+
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                setProductImage(this.result);
+            })
+
+            reader.readAsDataURL(file);
+        }
+    }
+
     return (
         <section>
             <div className='product-add-container'>
@@ -75,7 +96,14 @@ function ProductAddPage() {
                     </div>
                 </div>
                 <div className='add'>
-                    <button className='add-photo-btn'>
+                    <button className='add-photo-btn' onClick={handleButtonClick}>
+                        <input
+                            type="file"
+                            ref={fileInputRef}
+                            accept='image/*'
+                            style={{ display: 'none' }}
+                            onChange={handleFileChange}
+                        />
                         Add Photo
                         <span className='camera-icon'><FaCamera /></span>
                     </button>

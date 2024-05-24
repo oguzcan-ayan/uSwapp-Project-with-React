@@ -9,8 +9,8 @@ import { IoGameController } from "react-icons/io5";
 import { TbEPassport } from "react-icons/tb";
 import { GiStreetLight } from "react-icons/gi";
 import { BiSolidCarMechanic } from "react-icons/bi";
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowCircleLeft } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -100,7 +100,7 @@ function ProductCategories() {
                     <button
                         className='slick-prev-btn'
                         onClick={() => slickRef.current?.slickPrev()}>
-                        <FaArrowCircleLeft />
+                        <IoIosArrowBack />
                     </button>
                     <Slider ref={slickRef} {...settings}>
                         <div>
@@ -144,7 +144,7 @@ function ProductCategories() {
                         className='slick-next-btn'
                         onClick={() => slickRef.current?.slickNext()}
                         style={sliderStyle}>
-                        <FaArrowCircleRight />
+                        <IoIosArrowForward />
                     </button>
                 </div>
             </section>
