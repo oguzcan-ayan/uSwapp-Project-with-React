@@ -101,15 +101,22 @@
                 }
             }
 
+            .product-btns-container {
+                .product-btns-wrapper {
+                    padding: 0.2em 0.3em;
 
-            .product-btns {
-                button {
-                    height: 26px;
-                    font-size: 12px;
-                    letter-spacing: 0.5px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
 
-                    &:last-child {
-                        margin-top: 0.5rem;
+                .product-btns {
+                    top: 75px;
+
+                    button {
+                        height: 26px;
+                        font-size: 12px;
+                        letter-spacing: 0.5px;
                     }
                 }
             }
@@ -152,10 +159,10 @@
                 }
             }
 
-            .scroll-to-top-btn{
+            .scroll-to-top-btn {
                 bottom: 1rem;
 
-                .arrow-up{
+                .arrow-up {
                     width: 2.5rem;
                     height: 2rem;
                 }

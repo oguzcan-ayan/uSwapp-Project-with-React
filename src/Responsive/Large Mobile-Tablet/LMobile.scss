@@ -104,14 +104,25 @@
                     }
 
                     .product-btns {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
                         button {
                             height: 2.5rem;
                             margin-top: 3rem;
                             font-size: 20px;
+                            background-color: #004AAC;
+                            color: $base-color1;
+                            text-wrap: nowrap;
+                            border-radius: 3px;
+                            border: 2px solid #000;
 
                             &:last-child {
-                                margin-top: 2rem;
+                                margin-top: 1.5rem;
                             }
+
+
                         }
                     }
 
@@ -384,8 +395,6 @@
             }
 
             .slick-slider {
-                z-index: -2;
-
                 .slick-list {
                     .slick-track {
                         >div {
@@ -407,6 +416,31 @@
                                     >span+span {
                                         font-size: 14px;
                                         color: #333333;
+                                    }
+
+                                    .women{
+                                        color: rgb(240, 187, 196);
+                                    }
+                                    .men{
+                                        color: #004AAC;
+                                    }
+                                    .baby{
+                                        color: purple;
+                                    }
+                                    .book-stationery{
+                                        color: rgb(212, 184, 131);
+                                    }
+                                    .electronic{
+                                        color: #3386EF;
+                                    }
+                                    .furniture{
+                                        color: darkred;
+                                    }
+                                    .game-console{
+                                        color: #009087;
+                                    }
+                                    .sport-outdoor{
+                                        color: darkgreen;
                                     }
                                 }
                             }
