@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kinde-oss/kinde-auth-react": "^3.0.28",
     "axios": "^1.6.7",
     "formik": "^2.4.5",
     "html2canvas": "^1.4.1",
