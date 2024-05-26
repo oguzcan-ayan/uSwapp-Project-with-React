@@ -1,10 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { FaUserAlt } from "react-icons/fa";
 import { FaPencilAlt } from "react-icons/fa";
 
 function UserProfile() {
     return (
         <>
+
+            <Helmet>
+                <title>User Profile</title>
+                <meta name='description' content='user-profile-page' />
+            </Helmet>
+
             <section>
                 <div className='user-profile'>
                     <div className='user-profile-icon'>

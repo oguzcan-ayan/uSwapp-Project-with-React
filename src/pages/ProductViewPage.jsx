@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaImage, FaPlus } from "react-icons/fa6";
 import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
+import { Helmet } from 'react-helmet';
 
 function ProductViewPage() {
 
@@ -16,11 +17,17 @@ function ProductViewPage() {
     const { isHamburgerButtonOpen } = useMenu();
 
     const imageStyle = {
-      'zIndex': isHamburgerButtonOpen ? '-1' : '10'
+        'zIndex': isHamburgerButtonOpen ? '-1' : '10'
     }
 
     return (
         <>
+
+            <Helmet>
+                <title>Product View</title>
+                <meta name='description' content='product-view-page' />
+            </Helmet>
+
             <section>
                 <div className='product-view-container'>
                     <h2 className='product-view-title'>Product View</h2>

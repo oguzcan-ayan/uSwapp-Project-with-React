@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+/* import { useKindeAuth } from '@kinde-oss/kinde-auth-react';
+const { login, register } = useKindeAuth(); */
 
 function LoginAndSignupPage() {
 
@@ -6,6 +9,11 @@ function LoginAndSignupPage() {
 
     return (
         <>
+
+            <Helmet>
+                <title>Login and Signup</title>
+                <meta name='description' content='login-and-signup-page' />
+            </Helmet>
 
             <div className='login-and-signup-container'>
 
@@ -64,7 +72,7 @@ function LoginAndSignupPage() {
                                     </div>
                                 </div>
 
-                                <button className='signup-btn' type='submit' value="Sign Up">Sign up</button>
+                                <button className='signup-btn' type='button' value="Sign Up" /* onClick={register} */>Sign up</button>
 
                                 <span className='hr' />
 
@@ -99,7 +107,7 @@ function LoginAndSignupPage() {
                                 </label>
                             </div>
 
-                            <button className='login-btn' type='submit' value="Log In">Log in</button>
+                            <button className='login-btn' type='button' value="Log In" /* onClick={login} */>Log in</button>
 
                             <span className='hr' />
 

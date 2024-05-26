@@ -10,6 +10,7 @@ import { MdCancel } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
 import ScrollButton from './ScrollButton';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
 
@@ -259,15 +260,21 @@ function Header() {
                         <div className='user-contents'>
                             <div className='user-log'>
                                 <div className='account'>
+                                    {/* <NavLink to="/user-profile"> */}
                                     <span className='user-icon'><LuUser2 /></span>
                                     <span className='username'>username</span>
                                     <span className='user-mail'>user-mail@gmail.com</span>
+                                    {/* </NavLink> */}
                                 </div>
                             </div>
 
                             <div className='product-btns'>
+                                {/* <NavLink to="/product-add"> */}
                                 <button>Free Product ADD+</button>
+                                {/* </NavLink> */}
+                                {/* <NavLink to="/product-add/product-view"> */}
                                 <button>View Your Product</button>
+                                {/* </NavLink> */}
                             </div>
 
                             <div className='notifications'>
@@ -285,10 +292,12 @@ function Header() {
 
                         </div>
 
-                        <div className='log-out'>
-                            <span className='logout-icon'><MdLogout /></span>
-                            <span className='logout'>Log-out</span>
-                        </div>
+                        {/* <NavLink to="login-and-logout"> */}
+                            <div className='log-out'>
+                                <span className='logout-icon'><MdLogout /></span>
+                                <span className='logout'>Log-out</span>
+                            </div>
+                        {/* </NavLink> */}
 
                     </div>
                     <ScrollButton />
@@ -328,8 +337,12 @@ function Header() {
                             isProductButtonOpen &&
 
                             <div className='product-btns'>
+                                {/* <NavLink to="/product-add"> */}
                                 <button>Free Product ADD+</button>
+                                {/* </NavLink> */}
+                                {/* <NavLink to="/product-add/product-view"> */}
                                 <button>View Your Product</button>
+                                {/* </NavLink> */}
                             </div>
                         }
                     </div>
@@ -346,10 +359,12 @@ function Header() {
                                 </span>
                                 {isProfileOpen &&
                                     <div className='open-profile-menu'>
+                                        {/* <NavLink to="/user-profile"> */}
                                         <div className='username-and-mail'>
                                             <span className='username'>username</span>
                                             <span className='user-mail'>user-mail@gmail.com</span>
                                         </div>
+                                        {/* </NavLink> */}
                                         <div className='user-special-btns'>
                                             <div className='notifications'>
                                                 <span className='notifications-icon'><MdOutlineNotificationsActive /></span>
@@ -364,10 +379,12 @@ function Header() {
                             </div>
                         </div>
                     </div>
+                    {/* <NavLink to="login-and-signup"> */}
                     <div className='log-out'>
                         <span className='logout-icon'><MdLogout /></span>
                         <span className='logout'>Log-out</span>
                     </div>
+                    {/* </NavLink> */}
 
                     <ScrollButton />
                 </div>

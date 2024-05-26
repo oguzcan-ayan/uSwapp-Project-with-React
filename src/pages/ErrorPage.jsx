@@ -3,11 +3,18 @@ import { TbError404 } from "react-icons/tb";
 import { BiSolidError } from "react-icons/bi";
 import { IoArrowBack } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
+import { Helmet } from 'react-helmet';
 
 function ErrorPage() {
 
   return (
     <>
+
+      <Helmet>
+        <title>Error</title>
+        <meta name='description' content='error-page' />
+      </Helmet>
+
       <div className='error-container'>
 
         <div className='error-container-first'>

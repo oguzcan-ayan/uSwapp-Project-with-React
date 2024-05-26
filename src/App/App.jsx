@@ -1,25 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../App/App.scss';
 import '../Responsive/Large Laptop-Large Desktop/Desktop.scss';
 import '../Responsive/Laptop-Desktop/Laptop.scss';
 import '../Responsive/Tablet-Large Tablet/Tablet.scss';
 import '../Responsive/Large Mobile-Tablet/LMobile.scss';
 import '../Responsive/Mobile/Mobile.scss';
-import Header from '../components/Header';
-import ProductCategories from '../components/ProductCategories';
-import NewAddedProducts from '../components/NewAddedProducts';
 import { MenuProvider } from '../Tools/Context/ResponsiveMenuContext';
-import MostOfferedProducts from '../components/MostOfferedProducts';
-import Footer from '../components/Footer';
-import InfoAboutProject from '../components/InfoAboutProject';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import LoginAndSignupPage from '../pages/LoginAndSignupPage';
-import ProductAddPage from '../pages/ProductAddPage';
-import UserProfile from '../pages/UserProfile';
-import ErrorPage from '../pages/ErrorPage';
-import ProductViewPage from '../pages/ProductViewPage';
 import MainLayout from '../Layouts/MainLayout';
-
+// import { KindeProvider } from "@kinde-oss/kinde-auth-react";
 function App() {
 
   /*  const isLang = localStorage.getItem("lang");
@@ -32,23 +23,25 @@ function App() {
 
   return (
     <>
-      {/* 
-         </MainLayout>
-    </RouterProvider> */}
+
       <MenuProvider>
         <MainLayout />
-        {/* <Header /> */}
-      {/*   <ProductCategories />
-        <NewAddedProducts />
-        <MostOfferedProducts />
-        <InfoAboutProject /> */}
-        {/* <ProductAddPage /> */}
-        {/* <UserProfile /> */}
-        {/* <ProductViewPage /> */}
-        {/* <Footer /> */}
       </MenuProvider>
-      {/* <ErrorPage /> */}
+
       {/* <LoginAndSignupPage /> */}
+
+      {/*       <KindeProvider
+        clientId="3b8ecb9afb9445bda7ba2b9f2af53c2c"
+        domain="https://uswapp.kinde.com"
+        redirectUri="http://localhost:5173"
+        logoutUri="http://localhost:5173"
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route path="/login" element={<LoginAndSignupPage />} />
+          </Routes>
+        </BrowserRouter>
+      </KindeProvider> */}
     </>
   )
 }

@@ -10,6 +10,7 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
 import { useMenu } from '../Tools/Context/ResponsiveMenuContext';
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
 
@@ -23,7 +24,9 @@ function Footer() {
     <footer>
       <div className='uswapp-footer'>
         <div className='uswapp-about-us'>
+          {/* <NavLink to="/"> */}
           <h3>uSwapp</h3>
+          {/* </NavLink> */}
           <div className='uswapp-about-us-title'>
             <h4>About Us</h4>
             <span><BsInfoCircle /></span>
@@ -91,7 +94,9 @@ function Footer() {
       </div>
       <div className='uswapp-privacy'>
         <div className='all-rights'>
-          <span>@2024 uSwapp</span>
+          {/* <NavLink to="/"> */}
+            <span>@2024 uSwapp</span>
+          {/* </NavLink> */}
           <span>- All Rights Reserved.</span>
         </div>
         <div className='privacy-policy'>

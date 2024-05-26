@@ -104,39 +104,39 @@ function ProductCategories() {
                     </button>
                     <Slider ref={slickRef} {...settings}>
                         <div>
-                            <span><SlUserFemale /></span>
+                            <span className='women'><SlUserFemale /></span>
                             <span>Women</span>
                         </div>
                         <div>
-                            <span><FaRegUser /></span>
+                            <span className='men'><FaRegUser /></span>
                             <span>Men</span>
                         </div>
                         <div>
-                            <span><FaBabyCarriage /></span>
+                            <span className='baby'><FaBabyCarriage /></span>
                             <span>Baby</span>
                         </div>
                         <div>
-                            <span><FaBookOpen /></span>
+                            <span className='book-stationery'><FaBookOpen /></span>
                             <span>Book & Stationery</span>
                         </div>
                         <div>
-                            <span><AiOutlineLaptop /></span>
+                            <span className='electronic'><AiOutlineLaptop /></span>
                             <span>Electronic</span>
                         </div>
                         <div>
-                            <span><PiArmchairBold /><GiStreetLight /></span>
+                            <span className='furniture'><PiArmchairBold /><GiStreetLight /></span>
                             <span>Furniture</span>
                         </div>
                         <div>
-                            <span><IoGameController /></span>
+                            <span className='game-console'><IoGameController /></span>
                             <span>Game & Console</span>
                         </div>
                         <div>
-                            <span><TbEPassport /></span>
+                            <span className='sport-outdoor'><TbEPassport /></span>
                             <span>Sport & Outdoor</span>
                         </div>
                         <div>
-                            <span><BiSolidCarMechanic /></span>
+                            <span className='auto-parts'><BiSolidCarMechanic /></span>
                             <span>Auto Parts</span>
                         </div>
                     </Slider>
